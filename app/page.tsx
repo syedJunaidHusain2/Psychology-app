@@ -1,9 +1,5 @@
-import Image from "next/image";
+import HomeSection from "./home";
 
 export default function Home() {
-  return (
- <>
- dgdgdfgdfgdfgdfgdfs sdsdfd
- </>
-  );
+  return <HomeSection />;
 }
