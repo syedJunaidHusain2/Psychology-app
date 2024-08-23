@@ -1,10 +1,9 @@
-import Image from "next/image";
+import Home from "./home/page";
 
-export default function Home() {
+export default function App() {
   return (
  <>
- askhgls.j
- dgdgdfgdfgdfgdfgdfs sdsdfd
+ <Home/>
  </>
   );
 }

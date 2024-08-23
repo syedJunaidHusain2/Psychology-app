@@ -1,29 +1,30 @@
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "./styles.css";
 
-import './styles.css';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
-export default function App() {
+export default function SwiperApp() {
   return (
     <>
       <Swiper
         slidesPerView={1}
-        spaceBetween={30}
         loop={true}
-        pagination={{
-          clickable: true,
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
         }}
+        speed={1500}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide className="first-swiper"></SwiperSlide>
+        <SwiperSlide className="second-swiper"></SwiperSlide>
       </Swiper>
     </>
   );

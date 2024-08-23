@@ -1,12 +1,14 @@
-import Navbar from '@/components/navbar'
-import React from 'react'
-
+"use client";
+import Navbar from "@/components/navbar";
+import SwiperApp from "@/components/swiper";
+import "./style.css";
 const Home = () => {
   return (
-    <div>
-        <Navbar />
+    <div className="home">
+      <Navbar />
+      <SwiperApp />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
