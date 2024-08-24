@@ -91,34 +91,34 @@ const Footer = () => {
           height={150} 
           className='rounded-full size-24'
         />
-        <div className='mt-2 w-full md:w-[375px] text-sm md:text-base text-gray-500 leading-p'>
+        <div className='mt-2 lg:text-[14px] lg:leading-7 w-full md:w-[350px] text-sm md:text-base text-gray-500 '>
           At Mindthera, we understand that life’s challenges can sometimes feel overwhelming, and seeking support can be a daunting step. That’s why our team of dedicated therapists is here to provide you with the compassionate guidance and expert care you deserve.
         </div>
       </div>
       
       <div className='mb-6 lg:mb-0'>
-        <div className='text-lg md:text-xl text-bg_color_primary my-4'>Company</div>
+        <div className='lg:text-[16px] font-extrabold md:text-xl text-bg_color_primary my-4'>Company</div>
         {["Individual Therapy", "Couples Counseling", "Career Counseling", "Stress management", "Anxiety Treatment", "Depression Therapy"].map((item, index) => (
           <div key={index} className='text-sm md:text-base text-gray-500 my-2 cursor-pointer hover:text-black  '>{item}</div>
         ))}
       </div>
       
       <div className='mb-6 lg:mb-0'>
-        <div className='text-lg md:text-xl text-bg_color_primary my-4'>Our Services</div>
+        <div className='lg:text-[16px] font-extrabold md:text-xl text-bg_color_primary my-4'>Our Services</div>
         {["About Us", "Our Services", "Study Case", "Blog", "Contact Us"].map((item, index) => (
           <div key={index} className='text-sm md:text-base text-gray-500 my-2 cursor-pointer hover:text-black '>{item}</div>
         ))}
       </div>
       
       <div className='mb-6 lg:mb-0 lg:ml-14'>
-        <div className='flex items-center text-lg md:text-xl text-bg_color_primary font-semibold mt-4'> 
+        <div className='flex items-center lg:text-[16px] md:text-xl text-bg_color_primary font-extrabold mt-4'> 
           <CiLocationOn className='mr-2 '/> Office Location
         </div>
-        <div className='text-sm md:text-base text-gray-500 mb-4 mt-2 hover:text-black  '>100 S Main St, Los Angeles, CA</div>
-        <div className='flex items-center text-lg md:text-xl text-bg_color_primary font-semibold'> 
+        <div className='lg:text-[14px] md:text-base text-gray-500 mb-4 mt-2 hover:text-black  '>100 S Main St, Los Angeles, CA</div>
+        <div className='flex items-center lg:text-[16px]  md:text-xl text-bg_color_primary font-extrabold'> 
           <MdEmail className='mr-2'/> Send Messages
         </div>
-        <div className='text-sm md:text-base text-gray-500 mt-2 cursor-pointer hover:text-black '>contact@mindthera.com</div>
+        <div className='text-sm md:text-base lg:text[14px] text-gray-500 mt-2 cursor-pointer hover:text-black '>contact@mindthera.com</div>
         <div className='flex justify-evenly items-center mt-6 md:mt-8'>
           <FaFacebookF className='text-base md:text-lg text-bg_color_primary cursor-pointer' />
           <FaXTwitter className='text-base md:text-lg text-bg_color_primary cursor-pointer' />

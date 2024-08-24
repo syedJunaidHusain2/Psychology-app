@@ -3,10 +3,12 @@ import Footer from './footer'
 import BottomSec from './bottomSec'
 import Copyright from './copyright'
 import QuestionSec from './questionSec'
+import PricingSec from './pricingSec'
 
 const HomeSection = () => {
   return (
     <div>
+        <PricingSec/>
         <QuestionSec/>
         <BottomSec />
         <Footer />
