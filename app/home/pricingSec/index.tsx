@@ -2,6 +2,7 @@ import PricingComp from '@/components/pricingComp'
 import React, { useState } from 'react'
 import Image from 'next/image';
 import { url } from 'inspector';
+
 import   './Pricind.css';
 
 
@@ -11,17 +12,20 @@ const PricingSec = () => {
     {
       title: "Individual Therapy",
       pricing: "$150",
-      description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud."
+      description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud.",
+      image:'patient_one.jpg'
   },
   {
     title: "Couples Counseling",
     pricing: "$180",
-    description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud."
+    description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud.",
+      image:'patient_one.jpg'
 },
 {
   title: "Career Counseling",
   pricing: "$190",
-  description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud."
+  description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud.",
+    image:'patient_one.jpg'
 }
   ]
   return (
@@ -43,12 +47,15 @@ const PricingSec = () => {
           {
             pricingData.map((data,id)=>{
               return(
-                <PricingComp title={data.title} pricing={data.pricing} description={data.description}    />
+                <PricingComp title={data.title} pricing={data.pricing} description={data.description} image={data.image}    />
 
               )
             })
           }
         
+        </div>
+        <div className='test' >
+
         </div>
       </div>
     </div>

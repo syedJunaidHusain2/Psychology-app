@@ -6,7 +6,7 @@ Button
 } from "../../app/MTailwind";
 
 
-const PricingComp = ({title,pricing,description}) => {
+const PricingComp = ({title,pricing,description,image}) => {
   return (
     <div className='h-[500px] w-[400px] bg-white rounded-xl b '>
         <div className='h-14 w-full bg-bg_color_primary rounded-t-xl text-white text-h4 pt-3 pl-4' > {title}</div>
@@ -17,7 +17,7 @@ const PricingComp = ({title,pricing,description}) => {
           </div>
           <div>
           <Image 
-          src="/images/patient_three.jpg" 
+          src={`/images/${image}`}
           alt="logo" 
           width={200} 
           height={200} 

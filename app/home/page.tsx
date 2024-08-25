@@ -6,6 +6,12 @@ import img4 from "../../public/welcome_sec_images/img4.jpg";
 import img5 from "../../public/welcome_sec_images/img5.jpg";
 import img6 from "../../public/welcome_sec_images/img6.jpg";
 import "./style.css";
+import HomeSection from ".";
+import PricingSec from "./pricingSec";
+import QuestionSec from "./questionSec";
+import BottomSec from "./bottomSec";
+import Footer from "./footer";
+import Copyright from "./copyright";
 const Home = () => {
   return (
     <div className="home">
@@ -74,6 +80,11 @@ const Home = () => {
           </button>
         </div>
       </main>
+      <PricingSec />
+      <QuestionSec />
+      <BottomSec />
+      <Footer />
+      <Copyright />
     </div>
   );
 };

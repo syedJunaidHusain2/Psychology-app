@@ -1,5 +1,5 @@
-import HomeSection from "./home";
+import Home from "./home/page";
 
-export default function Home() {
-  return <HomeSection />;
+export default function App() {
+  return <Home />;
 }
