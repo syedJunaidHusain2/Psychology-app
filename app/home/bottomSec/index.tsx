@@ -33,7 +33,7 @@ const BottomSec = () => {
           <div className='text-p2'>+9162663283</div>
           <div className='text-p2'>contact@mindthera.com</div>
         </div>
-        <div className='lg:bg-pink-500 text-btnSize text-center md:text-left px-6 py-1 rounded-full cursor-pointer hover:shadow-custom transition-shadow duration-300'>
+        <div className='lg:bg-white lg:text-bg_color_primary lg:text-btnSize text-center md:text-left px-6 py-1 rounded-full cursor-pointer md:bg-white hover:shadow-custom transition-shadow duration-300'>
           Make Appointment
         </div>
       </div>
