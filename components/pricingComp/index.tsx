@@ -6,10 +6,10 @@ Button
 } from "../../app/MTailwind";
 
 
-const PricingComp = ({title,pricing,description,image}) => {
+const PricingComp = ({title,pricing,description,image,color}) => {
   return (
-    <div className='h-[500px] w-[400px] bg-white rounded-xl b '>
-        <div className='h-14 w-full bg-bg_color_primary rounded-t-xl text-white text-h4 pt-3 pl-4' > {title}</div>
+    <div className='  pb-8 bg-white rounded-xl b '>
+        <div className={`h-14 w-full bg-${color} rounded-t-xl text-white text-h4 pt-3 pl-4`} > {title}</div>
         <div className='  flex justify-between mx-8 items-center mt-10 mb-4 '>
           <div>
           <div className='text-[14px]'>Start from</div>
@@ -35,7 +35,6 @@ const PricingComp = ({title,pricing,description,image}) => {
 
         </div>
         <div className='px-8 mt-8'>
-
         <Button className='bg-bg_color_primary rounded-full' fullWidth>Make Appoinment</Button>
         </div>
       

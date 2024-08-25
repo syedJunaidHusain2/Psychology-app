@@ -8,7 +8,7 @@ const Navbar = () => {
         return (
           <span
             key={i}
-            className=" hover:text-green-700 text-center text-lg font-bold cursor-pointer select-none"
+            className=" hover:text-bg_color_primary text-center text-lg font-bold cursor-pointer select-none"
           >
             {opt}
           </span>
@@ -20,7 +20,7 @@ const Navbar = () => {
         </span>
         <span className=" text-center text-lg font-bold">+91 8303388143</span>
       </div>
-      <button className=" text-green-100 border-none rounded-3xl text-center bg-green-700 px-6 py-2 text-sm font-bold cursor-pointer select-none hover:text-green-700 hover:bg-white">
+      <button className=" text-green-100 border-none rounded-3xl text-center bg-bg_color_primary px-6 py-2 text-sm font-bold cursor-pointer select-none hover:text-bg_color_primary hover:bg-white">
         Make Appointment
       </button>
     </nav>

@@ -4,6 +4,9 @@ import { FaPhone } from "react-icons/fa6";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
 import Image from 'next/image';
+import {
+  Button
+  } from "../../MTailwind";
 
 const BottomSec = () => {
   const images = [
@@ -33,9 +36,13 @@ const BottomSec = () => {
           <div className='text-p2'>+9162663283</div>
           <div className='text-p2'>contact@mindthera.com</div>
         </div>
-        <div className='lg:bg-white lg:text-bg_color_primary lg:text-btnSize text-center md:text-left px-6 py-1 rounded-full cursor-pointer md:bg-white hover:shadow-custom transition-shadow duration-300'>
+        {/* <div className='lg:bg-white lg:text-bg_color_primary lg:text-btnSize text-center md:text-left px-6 py-1 rounded-full cursor-pointer md:bg-white hover:shadow-custom transition-shadow duration-300'>
           Make Appointment
+        </div> */}
+         <div className='px-8 mt-8'>
+        <Button className='bg-white text-btnSize text-bg_color_primary rounded-full' fullWidth>Make Appoinment</Button>
         </div>
+
       </div>
 
       {/* Image Gallery */}

@@ -13,24 +13,29 @@ const PricingSec = () => {
       title: "Individual Therapy",
       pricing: "$150",
       description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud.",
-      image:'patient_one.jpg'
+      image:'patient_three.jpg',
+      color:'bg_color_primary'
+
   },
   {
     title: "Couples Counseling",
     pricing: "$180",
     description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud.",
-      image:'patient_one.jpg'
+      image:'patient_four.jpg',
+      color:'bg_color_primary'
 },
 {
   title: "Career Counseling",
   pricing: "$190",
   description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud.",
-    image:'patient_one.jpg'
+    image:'patient_five.jpg',
+    color:'bg_color_primary'
+
 }
   ]
   return (
-    <div className='h-[120vh] w-full ' >
-      <div className="bg_image relative">
+    <div className='h-[140vh] w-full ' >
+      <div className="w-full h-full bg-cover bg-bottom bg-no-repeat" style={{ backgroundImage: "url('/images/forest_image_three.jpg')" }}>
         
       <div className=' px-28 py-20 absolute left-0 right-0 mx-auto'>
       <div className='flex flex-col justify-center items-center '>
@@ -47,7 +52,7 @@ const PricingSec = () => {
           {
             pricingData.map((data,id)=>{
               return(
-                <PricingComp title={data.title} pricing={data.pricing} description={data.description} image={data.image}    />
+                <PricingComp key={id} title={data.title} pricing={data.pricing} description={data.description} image={data.image} color={data.color}    />
 
               )
             })

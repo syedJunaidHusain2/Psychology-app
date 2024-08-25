@@ -6,18 +6,20 @@ import img4 from "../../public/welcome_sec_images/img4.jpg";
 import img5 from "../../public/welcome_sec_images/img5.jpg";
 import img6 from "../../public/welcome_sec_images/img6.jpg";
 import "./style.css";
-import HomeSection from ".";
+// import HomeSection from ".";x
 import PricingSec from "./pricingSec";
 import QuestionSec from "./questionSec";
 import BottomSec from "./bottomSec";
 import Footer from "./footer";
 import Copyright from "./copyright";
+import TeamSec from "./teamSec";
+import IncreaseCounter from "@/components/increaseCounter";
 const Home = () => {
   return (
     <div className="home">
-      <Navbar />
-      <SwiperApp />
-      <main className="flex min-h-screen w-full items-center justify-center gap-10">
+      {/* <Navbar /> */}
+      {/* <SwiperApp /> */}
+      {/* <main className="flex min-h-screen w-full items-center justify-center gap-10">
         <div className="flex w-2/4 items-center justify-end gap-5 ">
           <div className="flex items-end justify-end flex-col gap-5 mt-9">
             <img className="rounded-xl" width="180px" src={img3.src} alt="" />
@@ -33,7 +35,7 @@ const Home = () => {
             Welcome
           </span>
           <h3 className="w-full text-4xl font-bold">Transform Your</h3>
-          <h3 className="w-full text-6xl text-green-700">Mental Health</h3>
+          <h3 className="w-full text-6xl text-bg_color_primary">Mental Health</h3>
           <p className="w-3/4 text-base text-gray-700">
             Located in New York, NY, Mindthera specializes in providing
             top-notch psychotherapy services. Our team of experienced
@@ -44,15 +46,15 @@ const Home = () => {
           <div className="flex w-full items-start justify-start gap-8">
             <ul className=" min-w-fit  flex flex-col items-start justify-center">
               <li className="text-sm font-bold">
-                <span className="mr-2 text-lg text-green-700">O</span>Ut
+                <span className="mr-2 text-lg text-bg_color_primary">O</span>Ut
                 cupidatat veniam cillum.
               </li>
               <li className="text-sm font-bold">
-                <span className="mr-2 text-lg text-green-700">O</span>Ex labore
+                <span className="mr-2 text-lg text-bg_color_primary">O</span>Ex labore
                 dolore eiusmod aliquip.
               </li>
               <li className="text-sm font-bold">
-                <span className="mr-2 text-lg text-green-700">O</span>Culpa
+                <span className="mr-2 text-lg text-bg_color_primary">O</span>Culpa
                 exercitation.
               </li>
               <li className="text-sm font-bold">
@@ -79,7 +81,9 @@ const Home = () => {
             About us
           </button>
         </div>
-      </main>
+      </main> */}
+      <IncreaseCounter/>
+      <TeamSec/>
       <PricingSec />
       <QuestionSec />
       <BottomSec />
