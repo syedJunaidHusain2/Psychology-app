@@ -16,14 +16,14 @@
 }
 .first-swiper {
   background-image: url("../../public/img1.png");
-  filter: brightness(0.7);
+  /* filter: brightness(0.7); */
   position: relative;
   .laugh-img1 {
     animation: visible2 2s;
     position: absolute;
     left: 0;
     top: 16%;
-    width: 250px;
+    width: 15%;
     opacity: 1;
   }
 
@@ -32,7 +32,7 @@
     right: 16%;
     bottom: 0;
     animation: visible2 2s;
-    width: 250px;
+    width: 15%;
     opacity: 1;
   }
 
@@ -41,7 +41,7 @@
     left: 16%;
     bottom: 0;
     animation: visible2 2s;
-    width: 250px;
+    width: 15%;
     opacity: 1;
   }
   .laugh-img4 {
@@ -49,7 +49,7 @@
     right: 0;
     top: 16%;
     animation: visible2 2s;
-    width: 250px;
+    width: 15%;
     opacity: 1;
   }
   .laugh-img5 {
@@ -57,7 +57,7 @@
     right: 14%;
     top: 41%;
     opacity: 1;
-    width: 180px;
+    width: 13%;
     animation: visible3 2s;
   }
 
@@ -66,7 +66,7 @@
     left: 0;
     bottom: 14%;
     animation: visible4 2s;
-    width: 160px;
+    width: 12%;
     opacity: 1;
   }
 
@@ -75,14 +75,14 @@
     top: 16%;
     left: 34%;
     opacity: 1;
-    width: 250px;
+    width: 15%;
     animation: visible2 2s;
   }
   .laugh-img8 {
     position: absolute;
     bottom: 5%;
     left: 38%;
-    width: 180px;
+    width: 13%;
     animation: visible3 2s;
     opacity: 1;
   }
@@ -90,42 +90,42 @@
 @keyframes visible2 {
   from {
     opacity: 0;
-    width: 500px;
+    width: 30%;
   }
   to {
-    width: 250px;
+    width: 15%;
     opacity: 1;
   }
 }
 @keyframes visible3 {
   from {
     opacity: 0;
-    width: 500px;
+    width: 30%;
   }
   to {
-    width: 180px;
+    width: 13%;
     opacity: 1;
   }
 }
 @keyframes visible4 {
   from {
     opacity: 0;
-    width: 500px;
+    width: 30%;
   }
   to {
-    width: 160px;
+    width: 12%;
     opacity: 1;
   }
 }
 .second-swiper {
   position: relative;
   background-image: url("../../public/img2.png");
-  filter: brightness(0.7);
+  /* filter: brightness(0.7); */
   .img1 {
     opacity: 1;
     left: 0%;
     position: absolute;
-    width: 500px;
+    width: 30%;
     bottom: 0%;
     animation: visible1 2s;
   }
@@ -133,15 +133,15 @@
     opacity: 1;
     right: 0%;
     position: absolute;
-    width: 500px;
+    width: 30%;
     bottom: 0%;
     transform: rotateY(180deg);
     animation: visible1 2s;
   }
   .img3 {
     position: absolute;
-    bottom: -25%;
-    width: 500px;
+    bottom: -23%;
+    width: 30%;
     opacity: 1;
     animation: visible1 2s;
   }
@@ -149,10 +149,10 @@
 @keyframes visible1 {
   from {
     opacity: 0;
-    width: 700px;
+    width: 50%;
   }
   to {
-    width: 500px;
+    width: 30%;
     opacity: 1;
   }
 }
