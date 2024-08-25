@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,7 +17,7 @@ import "./styles.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function SwiperApp() {
-  const [laughImages, setLaughImages] = useState([
+  const [laughImages] = useState([
     laughImg6,
     laughImg8,
     laughImg9,
@@ -41,18 +41,6 @@ export default function SwiperApp() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide className="first-swiper">
-          {laughImages.map((imgs, i) => {
-            return (
-              <img
-                src={imgs.src}
-                key={i}
-                className={`laugh-img${i + 1}`}
-                alt=""
-              />
-            );
-          })}
-        </SwiperSlide>
         <SwiperSlide className="second-swiper">
           <img
             className="img1"
@@ -65,6 +53,18 @@ export default function SwiperApp() {
             alt=""
           />
           <img className="img3" src={laughImg7.src} alt="" />
+        </SwiperSlide>
+        <SwiperSlide className="first-swiper">
+          {laughImages.map((imgs, i) => {
+            return (
+              <img
+                src={imgs.src}
+                key={i}
+                className={`laugh-img${i + 1}`}
+                alt=""
+              />
+            );
+          })}
         </SwiperSlide>
       </Swiper>
     </>
