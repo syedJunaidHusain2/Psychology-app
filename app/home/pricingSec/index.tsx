@@ -1,11 +1,29 @@
 import PricingComp from '@/components/pricingComp'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image';
 import { url } from 'inspector';
 import   './Pricind.css';
 
 
 const PricingSec = () => {
+  // const [pricingData, setpricingData] = useState('')
+  const pricingData=[
+    {
+      title: "Individual Therapy",
+      pricing: "$150",
+      description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud."
+  },
+  {
+    title: "Couples Counseling",
+    pricing: "$180",
+    description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud."
+},
+{
+  title: "Career Counseling",
+  pricing: "$190",
+  description: "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud."
+}
+  ]
   return (
     <div className='h-[120vh] w-full ' >
       <div className="bg_image relative">
@@ -21,11 +39,17 @@ const PricingSec = () => {
         <div className='text-center text-white text-p w-[550px]  font-medium'>
         Qui culpa qui consequat officia cillum quis irure aliquip ut dolore sit eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.
         </div>
-        <div>
-        <PricingComp/>
+        <div className='flex gap-6 mt-12'>
+          {
+            pricingData.map((data,id)=>{
+              return(
+                <PricingComp title={data.title} pricing={data.pricing} description={data.description}    />
 
+              )
+            })
+          }
+        
         </div>
-
       </div>
     </div>
       </div>
