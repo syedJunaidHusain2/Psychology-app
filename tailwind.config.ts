@@ -1,5 +1,7 @@
 
+import { title } from "process";
 import type { Config } from "tailwindcss";
+const withMT = require("@material-tailwind/react/utils/withMT");
 
 const config: Config = {
   content: [
@@ -8,6 +10,73 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
+    accordion: {
+      defaultProps: {
+        icon: undefined,
+        className: "",
+        animate: {
+          unmount: {},
+          mount: {},
+        },
+        disabled: false,
+      },
+      styles: {
+        base: {
+          container: {
+            display: "block",
+            position: "relative",
+            width: "w-full",
+          },
+          header: {
+            initial: {
+              display: "flex",
+              justifyContent: "justify-between",
+              alignItems: "items-center",
+              width: "w-full",
+              py: "py-4",
+              borderWidth: "border-b border-b-blue-gray-100",
+              color: "text-red-600",
+              fontSmoothing: "antialiased",
+              fontFamily: "font-sans",
+              fontSize: "text-xl",
+              textAlign: "text-left",
+              fontWeight: "font-semibold",
+              lineHeight: "leading-snug",
+              userSelect: "select-none",
+              hover: "hover:text-red-600",
+              transition: "transition-colors",
+            },
+            active: { color: "text-blue-gray-900" },
+            icon: {
+              ml: "ml-4",
+            },
+          },
+          body: {
+            display: "block",
+            width: "w-full",
+            py: "py-4",
+            color: "text-gray-700",
+            fontSmoothing: "antialiased",
+            fontFamily: "font-sans",
+            fontSize: "text-sm",
+            fontWeight: "font-light",
+            lineHeight: "leading-normal",
+          },
+          disabled: {
+            pointerEvents: "pointer-events-none",
+            opacity: "opacity-50",
+          },
+        },
+      },
+    },
+
+
+
+
+
+
+
     extend: {
       boxShadow: {
         custom:
@@ -19,31 +88,41 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        title: ["Figtree", "sans-serif"],
+        // titleTwo: ["Allison", "sans-serif"],
+
+
+        // cursive_two:[ ]
+      },
       fontSize: {
         h1: "72px",
         h2: "42px",
         h4: "20px",
         p: "16px",
+        p2:"16px",
         btnSize : "14px",
       },
       lineHeight: {
         h1: "42px",
         h2: "42px",
         h4: "26px",
-        p: "1.8",
+        p: "30px",
       },
       fontWeight: {
         h1: "500",
         h2: "500",
         h4: "500",
         p: "400",
+        p2: "400",
         btnSize : "700",
       },
       colors: {
         bg_color_primary: "#008000",
-        bg_color_secendory: "",
-        bg_color_tertiary: "",
+        bg_color_secendory: "#5a9e7c",
+        bg_color_tertiary: "#e1ffd4",
         p: "#7b8893",
+        p2:"white",
         primaryText : "",
         secondaryText : "#008000",
         tertiaryText : "",
@@ -52,4 +131,4 @@ const config: Config = {
   },
   plugins: [],
 };
-export default config;
+module.exports = withMT(config);
