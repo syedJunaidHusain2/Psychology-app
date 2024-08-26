@@ -5,7 +5,7 @@ const QuestionSec = () => {
   return (
     <div className='bg-white px-6 py-10 sm:px-12 sm:py-16 lg:px-36 lg:py-20'>
       <div className='flex flex-col justify-center items-center'>
-        <div className='bg-green-200 text-center text-sm sm:text-base lg:text-btnSize font-bold px-4 py-2 rounded-full'>
+        <div className='text-center text-sm sm:text-base lg:text-btnSize font-bold px-4 py-2 rounded-full' style={{background : "rgb(0 255 10 / 49%)"}}>
           Do you have
         </div>
         <div className='text-center text-2xl sm:text-3xl lg:text-h2 font-semibold mt-4'>

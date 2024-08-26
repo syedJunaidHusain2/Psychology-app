@@ -101,13 +101,14 @@ const config: Config = {
         h4: "20px",
         p: "16px",
         p2:"16px",
+        black_text:'14px',
         btnSize : "14px",
       },
       lineHeight: {
         h1: "42px",
         h2: "42px",
         h4: "26px",
-        p: "30px",
+        p: "32px",
       },
       fontWeight: {
         h1: "500",
@@ -115,6 +116,7 @@ const config: Config = {
         h4: "500",
         p: "400",
         p2: "400",
+        black_text:'600',
         btnSize : "700",
       },
       colors: {
@@ -123,10 +125,18 @@ const config: Config = {
         bg_color_tertiary: "#e1ffd4",
         p: "#7b8893",
         p2:"white",
+        black_text:'black',
         primaryText : "",
         secondaryText : "#008000",
         tertiaryText : "",
       },
+
+      screens: {
+        'max-lg': {'max': '1024px'},
+        'max-md': {'max': '768px'},
+        'max-sm': {'max': '640px'},
+        
+      }
     },
   },
   plugins: [],
