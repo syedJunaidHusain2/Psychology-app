@@ -4,7 +4,7 @@ function TherapistAndTreatment() {
   return (
     <section className="therapist-and-treatments-sec min-h-screen flex flex-col items-center justify-center gap-2 pt-20 pb-20">
       <div className="heading-div-of-therapist-and-treatments-sec flex items-center justify-center flex-col">
-        <span className="services-span-of-heading-div-of-therapist-and-treatments-sec bg-green-200 font-btnSize p-2 rounded-full">
+        <span className="services-span-of-heading-div-of-therapist-and-treatments-sec text-base font-extrabold underline jost_regular ">
           Our Services
         </span>
         <h3 className="h3-of-heading-div-of-therapist-and-treatments-sec flex items-baseline justify-center gap-4">
@@ -19,7 +19,7 @@ function TherapistAndTreatment() {
         eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.
       </p>
       <div className="services-details-div-of-therapist-and-treatments-sec w-3/4 flex items-baseline justify-center flex-wrap gap-5 mt-10 ">
-<ServicesCard />
+        <ServicesCard />
       </div>
     </section>
   );
