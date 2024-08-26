@@ -13,7 +13,7 @@ import BottomSec from "./bottomSec";
 import Footer from "./footer";
 import Copyright from "./copyright";
 import TeamSec from "./teamSec";
-import IncreaseCounter from "@/components/increaseCounter";
+import IncreaseCounter from "../../components/increaseCounter";
 import { useEffect, useState } from "react";
 import TherapistAndTreatment from "@/components/therapist_and_treatments";
 const Home = () => {
@@ -149,6 +149,8 @@ const Home = () => {
         </div>
       </section>
       <TherapistAndTreatment />
+      <IncreaseCounter/>
+      <TeamSec/>
       <PricingSec />
       <QuestionSec />
       <BottomSec />
