@@ -1,0 +1,70 @@
+import React, { useState } from "react";
+import service_sec_img1 from "../../../public/services_sec_images/service_sec_img1.jpg";
+import service_sec_img2 from "../../../public/services_sec_images/service_sec_img2.jpg";
+import service_sec_img3 from "../../../public/services_sec_images/service_sec_img3.jpg";
+import service_sec_img4 from "../../../public/services_sec_images/service_sec_img4.jpg";
+import service_sec_img5 from "../../../public/services_sec_images/service_sec_img5.jpg";
+import service_sec_img6 from "../../../public/services_sec_images/service_sec_img6.jpg";
+function ServicesCard() {
+  const [servicesInfo] = useState([
+    {
+      img: service_sec_img1,
+      name: "Individual Therapy",
+      para: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    },
+    {
+      img: service_sec_img2,
+      name: "Couples Counseling",
+      para: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    },
+    {
+      img: service_sec_img3,
+      name: "Career Counseling",
+      para: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    },
+    {
+      img: service_sec_img4,
+      name: "Stress management",
+      para: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    },
+    {
+      img: service_sec_img5,
+      name: "Anxiety Treatment",
+      para: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    },
+    {
+      img: service_sec_img6,
+      name: "Depression Therapy",
+      para: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    },
+  ]);
+  return (
+    <>
+      {servicesInfo.map((s, i) => {
+        return (
+          <div
+            key={i}
+            style={{ width: "32%" }}
+            className="services-card flex flex-col items-start justify-center gap-4"
+          >
+            <div className="img-div-of-services-card relative w-full flex items-center justify-center overflow-hidden rounded-2xl hover:last:flex">
+              <img
+                src={s.img.src}
+                alt=""
+                width={"100%"}
+                className={` rounded-2xl hover:scale-125 transition-all ease-in-out duration-500 `}
+              />
+              <button className="jost_regular bg-bg_color_primary py-3 px-5 rounded-full none text-sm font-bold text-white absolute items-center justify-center hover:bg-green-200 hover:text-black transition-all">
+                Get Started
+              </button>
+            </div>
+            <h5 className=" text-h4 jost_regular font-medium">{s.name}</h5>
+            <p className="jost_regular text-p">{s.para}</p>
+          </div>
+        );
+      })}
+    </>
+  );
+}
+
+export default ServicesCard;
