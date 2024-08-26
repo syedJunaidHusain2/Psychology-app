@@ -54,7 +54,7 @@ const BottomSec = () => {
               alt={`Image ${id}`} 
               width={300} 
               height={150} 
-              className="w-full h-full cursor-pointer object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
+              className="w-full h-full cursor-pointer object-cover transition-transform duration-300 ease-in-out transform group-hover:scale-110"
             />
             <FaPlus className='text-white absolute z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-6 sm:size-8 md:size-10 cursor-pointer hidden group-hover:block' />
           </div>

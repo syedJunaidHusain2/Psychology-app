@@ -130,6 +130,13 @@ const config: Config = {
         secondaryText : "#008000",
         tertiaryText : "",
       },
+
+      screens: {
+        'max-lg': {'max': '1024px'},
+        'max-md': {'max': '768px'},
+        'max-sm': {'max': '640px'},
+        
+      }
     },
   },
   plugins: [],

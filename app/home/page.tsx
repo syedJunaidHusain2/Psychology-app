@@ -82,8 +82,8 @@ const Home = () => {
           </button>
         </div>
       </main> */}
-      <IncreaseCounter/>
-      <TeamSec/>
+      {/* <IncreaseCounter/> */}
+      {/* <TeamSec/> */}
       <PricingSec />
       <QuestionSec />
       <BottomSec />

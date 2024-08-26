@@ -19,14 +19,14 @@ const TeamComp = ({ image, name }) => {
         <div className='inline-flex text-h4 font-semibold mb-2'>{name}</div>
         <div className='text-p'>Psychologist</div>
         <div className='mt-4 flex gap-3'>
-          <IconButton className='bg-bg_color_primary cursor-pointer'>
-            <FaFacebookF className='text-xl text-white'/>
+          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white  cursor-pointer'>
+            <FaFacebookF className='text-xl '/>
           </IconButton>
-          <IconButton className='bg-bg_color_primary cursor-pointer'>
-            <FaXTwitter className='text-xl text-white'/>
+          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer'>
+            <FaXTwitter className='text-xl'/>
           </IconButton>
-          <IconButton className='bg-bg_color_primary cursor-pointer'>
-            <IoLogoInstagram className='text-xl text-white'/>
+          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer'>
+            <IoLogoInstagram className='text-xl '/>
           </IconButton>
         </div>
       </div>
