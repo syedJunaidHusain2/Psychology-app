@@ -47,17 +47,18 @@ function ServicesCard() {
             style={{ width: "32%" }}
             className="services-card flex flex-col items-start justify-center gap-4"
           >
-            <div className="img-div-of-services-card relative w-full flex items-center justify-center overflow-hidden rounded-2xl hover:last:flex">
+            <div className="relative w-full flex items-center justify-center overflow-hidden rounded-2xl group">
               <img
                 src={s.img.src}
-                alt=""
+                alt="img"
                 width={"100%"}
-                className={` rounded-2xl hover:scale-125 transition-all ease-in-out duration-500 `}
+                className="rounded-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-125"
               />
-              <button className="jost_regular bg-bg_color_primary py-3 px-5 rounded-full none text-sm font-bold text-white absolute items-center justify-center hover:bg-green-200 hover:text-black transition-all">
+              <button className="jost_regular bg-bg_color_primary py-3 px-5 rounded-full text-sm font-bold text-white absolute items-center justify-center hidden hover:bg-green-200 hover:text-black transition-all group-hover:flex">
                 Get Started
               </button>
             </div>
+
             <h5 className=" text-h4 jost_regular font-medium">{s.name}</h5>
             <p className="jost_regular text-p">{s.para}</p>
           </div>

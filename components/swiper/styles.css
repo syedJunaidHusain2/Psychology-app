@@ -15,10 +15,10 @@
   background-size: cover;
 }
 .first-swiper {
-  background-image: url("../../public/img1.png");
-  /* filter: brightness(0.7); */
+  background-image: url("../../public/img1.jpg");
+  filter: brightness(0.7);
   position: relative;
-  .laugh-img1 {
+  /* .laugh-img1 {
     animation: visible2 2s;
     position: absolute;
     left: 0;
@@ -115,13 +115,13 @@
   to {
     width: 12%;
     opacity: 1;
-  }
+  } */
 }
 .second-swiper {
   position: relative;
-  background-image: url("../../public/img2.png");
+  background-image: url("../../public/img2.jpg");
   /* filter: brightness(0.7); */
-  .img1 {
+  /* .img1 {
     opacity: 1;
     left: 0%;
     position: absolute;
@@ -154,7 +154,7 @@
   to {
     width: 30%;
     opacity: 1;
-  }
+  } */
 }
 .swiper-button-next,
 .swiper-button-prev {
