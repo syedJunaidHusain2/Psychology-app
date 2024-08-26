@@ -8,7 +8,7 @@ const Navbar = () => {
         return (
           <span
             key={i}
-            className=" hover:text-bg_color_primary text-center text-lg font-bold cursor-pointer select-none"
+            className=" hover:underline text-center text-lg font-bold cursor-pointer select-none"
           >
             {opt}
           </span>
