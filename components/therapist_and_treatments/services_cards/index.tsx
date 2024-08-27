@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.css";
 import service_sec_img1 from "../../../public/services_sec_images/service_sec_img1.jpg";
 import service_sec_img2 from "../../../public/services_sec_images/service_sec_img2.jpg";
 import service_sec_img3 from "../../../public/services_sec_images/service_sec_img3.jpg";
@@ -44,7 +45,6 @@ function ServicesCard() {
         return (
           <div
             key={i}
-            style={{ width: "32%" }}
             className="services-card flex flex-col items-start justify-center gap-4"
           >
             <div className="relative w-full flex items-center justify-center overflow-hidden rounded-2xl group">
@@ -54,7 +54,7 @@ function ServicesCard() {
                 width={"100%"}
                 className="rounded-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-125"
               />
-              <button className="jost_regular bg-bg_color_primary py-3 px-5 rounded-full text-sm font-bold text-white absolute items-center justify-center hidden hover:bg-green-200 hover:text-black transition-all group-hover:flex">
+              <button className="jost_regular bg-bg_color_primary py-3 px-5 rounded-full text-sm font-bold text-white absolute items-center justify-center hidden hover:underline transition-all group-hover:flex">
                 Get Started
               </button>
             </div>

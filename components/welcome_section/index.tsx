@@ -10,7 +10,7 @@ function WelcomeSec() {
   return (
     <>
       <section className="welcome-section-main-div flex min-h-screen w-full items-center justify-center gap-10">
-        <div className="left-div-of-welcome-section-main-div flex w-2/4 items-center justify-end gap-5 ">
+        <div className="left-div-of-welcome-section-main-div flex w-2/4 items-center justify-end gap-5 bg-white ">
           <div className="first-img-div-of-welcome-section-main-div flex items-end justify-end flex-col gap-5 mt-9">
             <img className={`rounded-xl`} width="180px" src={img3.src} alt="" />
             <img className={`rounded-xl`} width="270px" src={img4.src} alt="" />
@@ -30,7 +30,7 @@ function WelcomeSec() {
           <h3 className="w-full text-6xl text-bg_color_primary allison_regular">
             Mental Health
           </h3>
-          <p className="w-3/4 text-base text-gray-700">
+          <p className="w-3/4 text-base text-gray-700 max-xlg2:w-10/12 max-xlg3:w-11/12">
             Located in New York, NY, Mindthera specializes in providing
             top-notch psychotherapy services. Our team of experienced
             professionals is dedicated to helping you achieve mental wellness
@@ -85,7 +85,7 @@ function WelcomeSec() {
               </li>
             </ul>
           </div>
-          <button className=" jost_regular text-white border-none rounded-3xl text-center bg-bg_color_primary px-6 py-2 text-sm font-bold cursor-pointer select-none hover:text-black hover:bg-green-200">
+          <button className=" jost_regular text-white border-none rounded-3xl text-center bg-bg_color_primary px-6 py-2 text-sm font-bold cursor-pointer select-none hover:underline">
             About us
           </button>
         </div>

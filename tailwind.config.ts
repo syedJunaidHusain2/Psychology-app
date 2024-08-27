@@ -1,4 +1,3 @@
-
 import { title } from "process";
 import type { Config } from "tailwindcss";
 const withMT = require("@material-tailwind/react/utils/withMT");
@@ -10,7 +9,6 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-
     accordion: {
       defaultProps: {
         icon: undefined,
@@ -71,12 +69,6 @@ const config: Config = {
       },
     },
 
-
-
-
-
-
-
     extend: {
       boxShadow: {
         custom:
@@ -92,7 +84,6 @@ const config: Config = {
         title: ["Figtree", "sans-serif"],
         // titleTwo: ["Allison", "sans-serif"],
 
-
         // cursive_two:[ ]
       },
       fontSize: {
@@ -100,9 +91,9 @@ const config: Config = {
         h2: "42px",
         h4: "20px",
         p: "16px",
-        p2:"16px",
-        black_text:'14px',
-        btnSize : "14px",
+        p2: "16px",
+        black_text: "14px",
+        btnSize: "14px",
       },
       lineHeight: {
         h1: "42px",
@@ -116,27 +107,32 @@ const config: Config = {
         h4: "500",
         p: "400",
         p2: "400",
-        black_text:'600',
-        btnSize : "700",
+        black_text: "600",
+        btnSize: "700",
       },
       colors: {
         bg_color_primary: "#008000",
         bg_color_secendory: "#5a9e7c",
         bg_color_tertiary: "#e1ffd4",
         p: "#7b8893",
-        p2:"white",
-        black_text:'black',
-        primaryText : "",
-        secondaryText : "#008000",
-        tertiaryText : "",
+        p2: "white",
+        black_text: "black",
+        primaryText: "",
+        secondaryText: "#008000",
+        tertiaryText: "",
       },
 
       screens: {
-        'max-lg': {'max': '1024px'},
-        'max-md': {'max': '768px'},
-        'max-sm': {'max': '640px'},
-        
-      }
+        "max-xlg": { max: "1492px" },
+        "max-xlg2": { max: "1472px" },
+        "max-xlg3": { max: "1338px" },
+        "max-xlg4": { max: "1333px" },
+        "max-xlg5": { max: "1249px" },
+        "max-xlg6": { max: "1220px" },
+        "max-lg": { max: "1024px" },
+        "max-md": { max: "768px" },
+        "max-sm": { max: "640px" },
+      },
     },
   },
   plugins: [],

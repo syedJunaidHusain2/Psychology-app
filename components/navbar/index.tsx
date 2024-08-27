@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${navCon} jost_regular min-w-full max-w-full  p-2.5 flex items-center justify-center  gap-16 top-0 z-10 fixed`}
+      className={`${navCon} jost_regular w-full  p-2.5 flex items-center justify-center  gap-16 top-0 z-10 fixed`}
     >
       {navOpt.map((opt, i) => {
         return (

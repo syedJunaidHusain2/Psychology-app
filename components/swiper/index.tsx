@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "./styles.css";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import HeaderContent from "../header_content";
 
 export default function SwiperApp() {
   return (
@@ -21,10 +22,12 @@ export default function SwiperApp() {
         speed={500}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper w-full"
       >
-        <SwiperSlide className="second-swiper"></SwiperSlide>
-        <SwiperSlide className="first-swiper"></SwiperSlide>
+        <SwiperSlide className="second-swiper">
+          <HeaderContent/>
+        </SwiperSlide>
+        <SwiperSlide className="first-swiper"><HeaderContent/></SwiperSlide>
       </Swiper>
     </>
   );

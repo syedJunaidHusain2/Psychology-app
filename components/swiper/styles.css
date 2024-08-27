@@ -16,7 +16,6 @@
 }
 .first-swiper {
   background-image: url("../../public/img1.jpg");
-  filter: brightness(0.7);
   position: relative;
 }
 .second-swiper {

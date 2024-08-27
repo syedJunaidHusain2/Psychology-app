@@ -1,6 +1,6 @@
 import React from "react";
-
 import individualFirstProfileImg from "../../public/individual_first_profile_img.jpg";
+import "./style.css"
 function IndividualSec() {
   return (
     <>
