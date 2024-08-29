@@ -25,9 +25,11 @@ export default function SwiperApp() {
         className="mySwiper w-full"
       >
         <SwiperSlide className="second-swiper">
-          <HeaderContent/>
+          <HeaderContent />
         </SwiperSlide>
-        <SwiperSlide className="first-swiper"><HeaderContent/></SwiperSlide>
+        <SwiperSlide className="first-swiper">
+          <HeaderContent />
+        </SwiperSlide>
       </Swiper>
     </>
   );
