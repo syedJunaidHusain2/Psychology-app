@@ -14,19 +14,19 @@ import WelcomeSec from "@/components/welcome_section";
 import IndividualSec from "@/components/individual_therapy";
 const Home = () => {
   return (
-    <div className="home relative flex items-center justify-start flex-col">
+    <div className="home relative flex items-center w-full justify-start flex-col">
       <Navbar />
       <SwiperApp />
       <WelcomeSec />
       <IndividualSec />
       <TherapistAndTreatment />
-      <IncreaseCounter />
+      {/* <IncreaseCounter />
       <TeamSec />
       <PricingSec />
       <QuestionSec />
       <BottomSec />
       <Footer />
-      <Copyright />
+      <Copyright /> */}
     </div>
   );
 };

@@ -52,7 +52,7 @@ function WelcomeSec() {
           </div>
           <div
             style={{ width: "48%" }}
-            className="right-div-of-welcome-section-main-div flex flex-col items-start justify-center gap-5 "
+            className="right-div-of-welcome-section-main-div flex flex-col items-start justify-center gap-5 max-lg3:gap-3 "
           >
             <span className=" text-base underline jost_regular font-bold text-black">
               Welcome
@@ -106,7 +106,7 @@ function WelcomeSec() {
                   <FaStar />
                   <FaStar />
                 </li>
-                <li className=" text-sm text-gray-700">
+                <li className=" text-sm text-gray-700 max-lg4:text-xs ">
                   Based on <b>185 reviews</b>
                 </li>
                 <li>

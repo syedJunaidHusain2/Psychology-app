@@ -1,3 +1,8 @@
-.services-card{
-    width: 32%;
-    }
+.services-card {
+  width: 32%;
+}
+@media screen and (max-width: 1219px) {
+  .services-card {
+    width: 31%;
+  }
+}

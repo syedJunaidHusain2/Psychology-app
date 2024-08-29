@@ -30,7 +30,7 @@ function TherapistAndTreatment() {
             Qui culpa qui consequat officia cillum quis irure aliquip ut dolore
             sit eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.
           </p>
-          <div className="services-details-div-of-therapist-and-treatments-sec w-full flex items-baseline justify-center flex-wrap gap-x-5 gap-y-10 mt-10 max-xlg4:w-4/5 max-xlg5:w-11/12">
+          <div className="services-details-div-of-therapist-and-treatments-sec w-full flex items-baseline justify-center flex-wrap gap-x-5 gap-y-10 mt-10 ">
             <ServicesCard />
           </div>
         </div>

@@ -10,13 +10,16 @@ function HeaderContent() {
         className=" header-content-sec flex items-center justify-end "
         style={{ width: "82%" }}
       >
-        <div className=" flex flex-col items-start justify-center w-2/5 text-white gap-4 ">
+        <div
+          style={{ width: "45%" }}
+          className=" flex flex-col items-start justify-center text-white gap-4 "
+        >
           <span className=" underline font-btnSize jost_regular">
             MindThera
           </span>
           <h1 className=" jost_regular text-6xl font-medium flex flex-col items-start justify-center">
             Begin Your
-            <span className=" allison_regular text-8xl max-xlg:text-7xl">
+            <span className=" allison_regular text-8xl max-lg2:text-newH1 max-lg3:text-newH2">
               Inner Peace Journey
             </span>
           </h1>

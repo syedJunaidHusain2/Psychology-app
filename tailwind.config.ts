@@ -88,6 +88,8 @@ const config: Config = {
       },
       fontSize: {
         h1: "72px",
+        newH1: "86px",
+        newH2: "76px",
         h2: "42px",
         h4: "20px",
         p: "16px",
@@ -124,14 +126,12 @@ const config: Config = {
 
       screens: {
         "max-xlg": { max: "1492px" },
-        "max-xlg2": { max: "1472px" },
-        "max-xlg3": { max: "1338px" },
-        "max-xlg4": { max: "1333px" },
-        "max-xlg5": { max: "1249px" },
-        "max-xlg6": { max: "1220px" },
         "max-lg": { max: "1024px" },
         "max-md": { max: "768px" },
         "max-sm": { max: "640px" },
+        "max-lg4": { max: "1146px" },
+        "max-lg2": { max: "1348px" },
+        "max-lg3": { max: "1208px" },
       },
     },
   },
