@@ -2,80 +2,16 @@
 import { title } from "process";
 import type { Config } from "tailwindcss";
 const withMT = require("@material-tailwind/react/utils/withMT");
+const {nextui} = require("@nextui-org/react");
 
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-
-    accordion: {
-      defaultProps: {
-        icon: undefined,
-        className: "",
-        animate: {
-          unmount: {},
-          mount: {},
-        },
-        disabled: false,
-      },
-      styles: {
-        base: {
-          container: {
-            display: "block",
-            position: "relative",
-            width: "w-full",
-          },
-          header: {
-            initial: {
-              display: "flex",
-              justifyContent: "justify-between",
-              alignItems: "items-center",
-              width: "w-full",
-              py: "py-4",
-              borderWidth: "border-b border-b-blue-gray-100",
-              color: "text-red-600",
-              fontSmoothing: "antialiased",
-              fontFamily: "font-sans",
-              fontSize: "text-xl",
-              textAlign: "text-left",
-              fontWeight: "font-semibold",
-              lineHeight: "leading-snug",
-              userSelect: "select-none",
-              hover: "hover:text-red-600",
-              transition: "transition-colors",
-            },
-            active: { color: "text-blue-gray-900" },
-            icon: {
-              ml: "ml-4",
-            },
-          },
-          body: {
-            display: "block",
-            width: "w-full",
-            py: "py-4",
-            color: "text-gray-700",
-            fontSmoothing: "antialiased",
-            fontFamily: "font-sans",
-            fontSize: "text-sm",
-            fontWeight: "font-light",
-            lineHeight: "leading-normal",
-          },
-          disabled: {
-            pointerEvents: "pointer-events-none",
-            opacity: "opacity-50",
-          },
-        },
-      },
-    },
-
-
-
-
-
-
 
     extend: {
       boxShadow: {
@@ -132,13 +68,19 @@ const config: Config = {
       },
 
       screens: {
+        'max-semixl': {'max': '1100px'},
+
+        'max-xl': {'max': '1280px'},
+
         'max-lg': {'max': '1024px'},
-        'max-md': {'max': '768px'},
+        'max-md': {'max': '712px'},
         'max-sm': {'max': '640px'},
-        
+
+        'min-xl': {'min': '1100px'},
+
       }
     },
   },
-  plugins: [],
+  plugins: [ nextui()],
 };
 module.exports = withMT(config);

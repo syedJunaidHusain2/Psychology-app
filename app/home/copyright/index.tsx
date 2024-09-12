@@ -2,7 +2,7 @@ import React from 'react'
 
 const Copyright = () => {
   return (
-    <div className='flex flex-col md:flex-row justify-between py-4 px-4 md:px-10 lg:px-32 items-center text-sm sm:text-base md:text-lg lg:text-xl border-t-[1px] border-gray-400'>
+    <div className=' max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between py-4 px-4 md:px-10 lg:px-32 items-center text-sm sm:text-base md:text-lg lg:text-xl border-t-[1px] border-gray-400'>
       <div className='text-gray-500 text-p text-center md:text-left mb-4 md:mb-0'>
         Copyright 2024 – Mindthera by Designesia
       </div>
