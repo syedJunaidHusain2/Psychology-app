@@ -113,6 +113,7 @@ const config: Config = {
         btnSize: "700",
       },
       colors: {
+        bg_black_light : "#00000025",
         bg_color_primary: "#008000",
         bg_color_secendory: "#5a9e7c",
         bg_color_tertiary: "#e1ffd4",

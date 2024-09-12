@@ -1,10 +1,10 @@
 import React from "react";
 import individualFirstProfileImg from "../../public/individual_first_profile_img.jpg";
-import "./style.css";
+import "./styles.scss";
 function IndividualSec() {
   return (
     <>
-      <section className="individual-therapy-section-main-div w-full flex items-center justify-center">
+      <section className="individual-therapy-section-main-div w-full flex items-center justify-center bg-center bg-cover bg-no-repeat bg-fixed ">
         <div
           style={{ maxWidth: 1400 }}
           className="first-div-of-individual-therapy-section w-full flex items-start justify-center pt-28 pb-28"

@@ -3,13 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import "./styles.css";
-
+import "./styles.scss";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import HeaderContent from "../header_content";
 
-export default function SwiperApp() {
+function SwiperApp() {
   return (
     <>
       <Swiper
@@ -22,15 +20,16 @@ export default function SwiperApp() {
         speed={500}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper w-full"
+        className=" w-full h-screen flex items-center justify-center"
       >
-        <SwiperSlide className="second-swiper">
+        <SwiperSlide className="first-swiper w-full bg-center bg-no-repeat bg-cover flex items-center justify-center relative">
           <HeaderContent />
         </SwiperSlide>
-        <SwiperSlide className="first-swiper">
+        <SwiperSlide className="second-swiper w-full bg-center bg-no-repeat bg-cover flex items-center justify-center relative">
           <HeaderContent />
         </SwiperSlide>
       </Swiper>
     </>
   );
 }
+export default SwiperApp;

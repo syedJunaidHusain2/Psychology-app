@@ -1,0 +1,24 @@
+.swiper-slide-2 {
+  display: flex;
+}
+.first-swiper-1 {
+  background-image: url("../../public/doctor_slider_img/img1.jpg");
+}
+.second-swiper-2 {
+  background-image: url("../../public/doctor_slider_img/img2.jpg");
+}
+.third-swiper-3 {
+  background-image: url("../../public/doctor_slider_img/img3.jpg");
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  padding: 25px;
+  background-color: #00000025;
+  border-radius: 25px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px;
+  font-weight: 700;
+}

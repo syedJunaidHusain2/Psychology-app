@@ -1,25 +1,10 @@
-.swiper {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .swiper-slide {
-  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .first-swiper {
   background-image: url("../../public/img1.jpg");
-  position: relative;
 }
 .second-swiper {
-  position: relative;
   background-image: url("../../public/img2.jpg");
 }
 .swiper-button-next,
