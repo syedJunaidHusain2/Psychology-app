@@ -1,3 +1,4 @@
+-
 "use client";
 import Navbar from "@/components/navbar";
 import SwiperApp from "@/components/swiper";
@@ -13,7 +14,7 @@ import BottomSec from "./bottomSec";
 import Footer from "./footer";
 import Copyright from "./copyright";
 import TeamSec from "./teamSec";
-import IncreaseCounter from "@/components/increaseCounter";
+import IncreaseCounter from "../../components/increaseCounter";
 import { useEffect, useState } from "react";
 import TherapistAndTreatment from "@/components/therapist_and_treatments";
 import CalenderComp from "@/components/calenderComp";
@@ -160,6 +161,8 @@ const Home = () => {
       {/* <MyDatePicker/> */}
       <IncreaseCounter/>
       <TeamSec/>              
+      <IncreaseCounter/>
+      <TeamSec/>
       <PricingSec />
       <QuestionSec />
       <BottomSec />
