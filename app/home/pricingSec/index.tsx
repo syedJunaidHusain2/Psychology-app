@@ -9,7 +9,7 @@ const PricingSec = () => {
   const pricingData = [
     {
       title: "Individual Therapy",
-      pricing: "$150",
+      pricing: "699",
       description:
         "Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis dolor anim reprehenderit nulla nostrud.",
       image: "patient_three.jpg",
@@ -33,40 +33,39 @@ const PricingSec = () => {
     },
   ];
   return (
-    <div className="  w-full">
-      <div
-        className="w-full h-full sm:bg-cover bg-inherit bg-bottom bg-no-repeat"
-        style={{ backgroundImage: "url('/images/forest_image_three.jpg')" }}
-      >
-        <div className=" md:px-28 sm:px-12 px-6  py-20 min-h-screen mx-auto">
-          <div className="flex flex-col justify-center items-center ">
-            <div className="bg-gray-700 bg-opacity-50 text-white text-center text-btnSize font-btnSize inline-flex px-4 py-2 rounded-full">
-              Our pakage
-            </div>
-            <div className="text-center text-white text-h2 font-semibold">
-              Prcing{" "}
-              <span className="text-bg_color_primary text-h1 font-light allison_regular">
-                Plans
-              </span>
-            </div>
-            <div className="text-center text-white text-p   font-medium">
-              Qui culpa qui consequat officia cillum quis irure aliquip ut
-              dolore sit eu culpa ut irure nisi occaecat dolore adipisicing do
-              pariatur.
-            </div>
-            <div className="max-sm:flex-col flex gap-6 mt-12">
-              {pricingData.map((data, id) => {
-                return (
-                  <PricingComp
-                    key={id}
-                    title={data.title}
-                    pricing={data.pricing}
-                    description={data.description}
-                    image={data.image}
-                    color={data.color}
-                  />
-                );
-              })}
+    <div style={{ backgroundImage: "url('/images/forest_image_three.jpg')" }}>
+      <div className="max-w-[1400px] mx-auto">
+        <div className="w-full h-full sm:bg-cover bg-inherit bg-bottom bg-no-repeat">
+          <div className=" md:px-10 sm:px-12 px-6  py-20 min-h-screen mx-auto">
+            <div className="flex flex-col justify-center items-center ">
+              <div className="bg-gray-700 bg-opacity-50 text-white text-center text-btnSize font-btnSize inline-flex px-4 py-2 rounded-full">
+                Our pakage
+              </div>
+              <div className="text-center text-white text-h2 font-semibold">
+                Prcing{" "}
+                <span className="text-bg_color_primary text-h1 font-light allison_regular">
+                  Plans
+                </span>
+              </div>
+              <div className="text-center text-white text-p max-md:w-48   font-medium">
+                Qui culpa qui consequat officia cillum quis irure aliquip ut
+                dolore sit eu culpa ut irure nisi occaecat dolore adipisicing do
+                pariatur.
+              </div>
+              <div className=" max-md:flex-wrap max-lg:flex-wrap flex gap-6 mt-12">
+                {pricingData.map((data, id) => {
+                  return (
+                    <PricingComp
+                      key={id}
+                      title={data.title}
+                      pricing={data.pricing}
+                      description={data.description}
+                      image={data.image}
+                      color={data.color}
+                    />
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

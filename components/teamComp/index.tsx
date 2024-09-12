@@ -1,37 +1,40 @@
-import { IconButton } from '../../app/MTailwind'
-import Image from 'next/image'
-import React from 'react'
+import { IconButton } from '../../app/MTailwind';
+import Image from 'next/image';
+import React from 'react';
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
 
 const TeamComp = ({ image, name }) => {
   return (
-    <div className='h-[380px] w-[280px] sm:h-[400px] sm:w-[300px] md:h-[420px] md:w-[320px] lg:h-[440px] lg:w-[340px] relative rounded-t-lg'>
+    <div className='h-[420px] w-[300px] mx-auto relative rounded-t-lg'>
       <Image 
         src={`/images/${image}`} 
         alt={`Image`} 
-        width={300} 
-        height={150} 
-        className="w-full h-[250px] sm:h-[260px] md:h-[280px] lg:h-[300px] rounded-xl object-cover object-top"
+        width={200}   
+        height={0} 
+        className="w-full h-[300px] + mx-auto rounded-xl object-cover object-top"
       />
-      <div className='bg-green-100 rounded-xl w-[90%] sm:w-[85%] md:w-[80%] absolute bottom-0 left-3 lg:bottom-0 left-8  pt-4 pb-4 flex flex-col justify-center items-center text-center'>
-        <div className='inline-flex text-h4 font-semibold mb-2'>{name}</div>
-        <div className='text-p'>Psychologist</div>
+      <div className='flex justify-center'>
+
+      <div className='bg-green-100  rounded-xl w-72 absolute bottom-0 pt-4 pb-4 flex flex-col justify-center items-center text-center'>
+        <div className='text-lg font-semibold mb-2'>{name}</div>
+        <div className='text-sm'>Psychologist</div>
         <div className='mt-4 flex gap-3'>
-          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white  cursor-pointer'>
-            <FaFacebookF className='text-xl '/>
+          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer p-2'>
+            <FaFacebookF className='text-sm'/>
           </IconButton>
-          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer'>
-            <FaXTwitter className='text-xl'/>
+          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer p-2'>
+            <FaXTwitter className='text-sm'/>
           </IconButton>
-          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer'>
-            <IoLogoInstagram className='text-xl '/>
+          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer p-2'>
+            <IoLogoInstagram className='text-sm'/>
           </IconButton>
         </div>
+      </div>
       </div>
     </div>
   )
 }
 
-export default TeamComp
+export default TeamComp;

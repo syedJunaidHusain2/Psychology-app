@@ -16,6 +16,10 @@ import TeamSec from "./teamSec";
 import IncreaseCounter from "@/components/increaseCounter";
 import { useEffect, useState } from "react";
 import TherapistAndTreatment from "@/components/therapist_and_treatments";
+import CalenderComp from "@/components/calenderComp";
+import { NextUIProvider } from "@nextui-org/react";
+import Test from "@/components/test";
+import MyDatePicker from "@/components/calenderComp";
 const Home = () => {
   const [scrollCon1, setScrollCon1] = useState({
     img3Class: "",
@@ -38,10 +42,13 @@ const Home = () => {
   }, []);
 
   return (
+    <NextUIProvider>
+
+  
     <div className="home">
-      <Navbar />
-      <SwiperApp />
-      <section className="welcome-section-main-div flex min-h-screen w-full items-center justify-center gap-10">
+      {/* <Navbar /> */}
+      {/* <SwiperApp /> */}
+      {/* <section className="welcome-section-main-div flex min-h-screen w-full items-center justify-center gap-10">
         <div className="left-div-of-welcome-section-main-div flex w-2/4 items-center justify-end gap-5 ">
           <div className="first-img-div-of-welcome-section-main-div flex items-end justify-end flex-col gap-5 mt-9">
             <img
@@ -147,14 +154,19 @@ const Home = () => {
             for your excellent service!
           </p>
         </div>
-      </section>
-      <TherapistAndTreatment />
+      </section> */}
+      {/* <TherapistAndTreatment />  */}
+      {/* <Test/> */}
+      {/* <MyDatePicker/> */}
+      <IncreaseCounter/>
+      <TeamSec/>              
       <PricingSec />
       <QuestionSec />
       <BottomSec />
       <Footer />
       <Copyright />
     </div>
+    </NextUIProvider>
   );
 };
 

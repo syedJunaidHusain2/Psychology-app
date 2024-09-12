@@ -14,7 +14,7 @@
   font-family: var(--font-jost);
 }
 .allison_regular {
-  font-family: var(--font-allison);
+  font-family: var(--font-allison) !important;
 }
 .poppins_regular {
   font-family: var(--font-poppins);
