@@ -1,12 +1,6 @@
--
 "use client";
 import Navbar from "@/components/navbar";
 import SwiperApp from "@/components/swiper";
-import img3 from "../../public/welcome_sec_images/img3.jpg";
-import img4 from "../../public/welcome_sec_images/img4.jpg";
-import img5 from "../../public/welcome_sec_images/img5.jpg";
-import img6 from "../../public/welcome_sec_images/img6.jpg";
-import individualFirstProfileImg from "../../public/individual_first_profile_img.jpg";
 import "./style.css";
 import PricingSec from "./pricingSec";
 import QuestionSec from "./questionSec";
@@ -15,33 +9,11 @@ import Footer from "./footer";
 import Copyright from "./copyright";
 import TeamSec from "./teamSec";
 import IncreaseCounter from "../../components/increaseCounter";
-import { useEffect, useState } from "react";
 import TherapistAndTreatment from "@/components/therapist_and_treatments";
-import CalenderComp from "@/components/calenderComp";
-import { NextUIProvider } from "@nextui-org/react";
-import Test from "@/components/test";
-import MyDatePicker from "@/components/calenderComp";
+import WelcomeSec from "@/components/welcome_section";
+import IndividualSec from "@/components/individual_therapy";
+import SwiperApp2 from "@/components/swiper2";
 const Home = () => {
-  const [scrollCon1, setScrollCon1] = useState({
-    img3Class: "",
-    img4Class: "",
-    img5Class: "",
-    img6Class: "",
-  });
-  useEffect(() => {
-    const funcForAddClassInImgForCon = () => {
-      if (window.scrollY >= 563) {
-        setScrollCon1({
-          img3Class: "animate-img3",
-          img4Class: "animate-img4",
-          img5Class: "animate-img5",
-          img6Class: "animate-img6",
-        });
-      }
-    };
-    window.addEventListener("scroll", funcForAddClassInImgForCon);
-  }, []);
-
   return (
     <NextUIProvider>
 
@@ -165,7 +137,6 @@ const Home = () => {
       <Footer />
       <Copyright />
     </div>
-    </NextUIProvider>
   );
 };
 
