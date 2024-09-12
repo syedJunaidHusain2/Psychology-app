@@ -12,8 +12,6 @@ import IncreaseCounter from "../../components/increaseCounter";
 import TherapistAndTreatment from "@/components/therapist_and_treatments";
 import WelcomeSec from "@/components/welcome_section";
 import IndividualSec from "@/components/individual_therapy";
-import headBgImg1 from "../../public/img1.jpg"
-import headBgImg2 from "../../public/img2.jpg"
 import SwiperApp2 from "@/components/swiper2";
 const Home = () => {
   return (

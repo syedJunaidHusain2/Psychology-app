@@ -19,7 +19,12 @@ const BottomSec = () => {
   ];
 
   return (
-    <div className='bg-bg_color_primary text-white '>
+
+    <div className="bg-bg_color_primary ">
+
+    <div className="max-w-[1400px] mx-auto">
+
+    <div className='bg-bg_color_primary text-white'>
       <div className='flex flex-col md:flex-row justify-around items-center py-8 px-4 md:px-8 lg:px-16 text-lg md:text-xl'>
         <div className='text-center md:text-left mb-4 md:mb-0'>
           <MdAccessTime className='mx-auto md:mx-0 size-8 mb-2' />
@@ -44,6 +49,10 @@ const BottomSec = () => {
         </div>
 
       </div>
+    </div>
+
+    </div>
+
 
       {/* Image Gallery */}
       <div className="flex flex-wrap">
@@ -61,6 +70,7 @@ const BottomSec = () => {
         ))}
       </div>
     </div>
+
   )
 }
 
