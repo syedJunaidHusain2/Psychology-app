@@ -16,9 +16,9 @@ import SwiperApp2 from "@/components/swiper2";
 const Home = () => {
   return (
     <div className="home">
-      <Navbar />
+      {/* <Navbar />
       <SwiperApp />
-      <TherapistAndTreatment />
+      <TherapistAndTreatment /> */}
       <IncreaseCounter />
       <TeamSec />
       <PricingSec />

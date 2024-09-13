@@ -127,10 +127,12 @@ const config: Config = {
       },
 
       screens: {
-        "max-xlg": { max: "1492px" },
+        "max-xl": { max: "1492px" },
         "max-lg": { max: "1024px" },
         "max-md": { max: "768px" },
         "max-sm": { max: "640px" },
+        "max-xsm": { max: "430px" },
+        // Khalid Responsive 
         "max-lg4": { max: "1146px" },
         "max-lg2": { max: "1348px" },
         "max-lg3": { max: "1208px" },

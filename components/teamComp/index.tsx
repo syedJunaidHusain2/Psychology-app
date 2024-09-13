@@ -5,7 +5,12 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
 
-const TeamComp = ({ image, name }) => {
+interface TeamCompprops {
+  image:string,
+  name:string
+}
+
+const TeamComp :React.FC<TeamCompprops>=({ image, name }) => {
   return (
     <div className='h-[420px] w-[300px] mx-auto relative rounded-t-lg'>
       <Image 
@@ -22,13 +27,13 @@ const TeamComp = ({ image, name }) => {
         <div className='text-sm'>Psychologist</div>
         <div className='mt-4 flex gap-3'>
           <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer p-2'>
-            <FaFacebookF className='text-sm'/>
+            <FaFacebookF className='text-lg'/>
           </IconButton>
           <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer p-2'>
-            <FaXTwitter className='text-sm'/>
+            <FaXTwitter className='text-lg'/>
           </IconButton>
           <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white cursor-pointer p-2'>
-            <IoLogoInstagram className='text-sm'/>
+            <IoLogoInstagram className='text-lg'/>
           </IconButton>
         </div>
       </div>
