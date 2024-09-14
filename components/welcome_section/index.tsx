@@ -8,13 +8,13 @@ import { FaStar } from "react-icons/fa6";
 
 function WelcomeSec() {
   return (
-    <>
-      <section
+    <section className=" w-full flex items-center justify-center">
+      <div
         style={{ maxWidth: 1400 }}
         className="welcome-section-main-div flex mt-28 mb-28 w-full items-center justify-center"
       >
         <div
-          style={{ width: "82%" }}
+          style={{ width: "84%" }}
           className=" flex items-center justify-between "
         >
           <div
@@ -123,8 +123,8 @@ function WelcomeSec() {
             </button>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 

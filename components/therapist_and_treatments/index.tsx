@@ -12,7 +12,7 @@ function TherapistAndTreatment() {
         className=" w-full flex flex-col items-center justify-center "
       >
         <div
-          style={{ width: "82%" }}
+          style={{ width: "84%" }}
           className=" flex flex-col items-center justify-center gap-2"
         >
           <div className="heading-div-of-therapist-and-treatments-sec flex items-center justify-center flex-col">

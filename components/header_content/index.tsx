@@ -8,10 +8,10 @@ function HeaderContent() {
     >
       <div
         className=" header-content-sec flex items-center justify-end "
-        style={{ width: "82%" }}
+        style={{ width: "84%" }}
       >
         <div
-          style={{ width: "45%" }}
+          style={{ width: "48%" }}
           className=" flex flex-col items-start justify-center text-white gap-4 "
         >
           <span className=" underline font-btnSize jost_regular">

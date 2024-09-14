@@ -15,18 +15,21 @@ import IndividualSec from "@/components/individual_therapy";
 import SwiperApp2 from "@/components/swiper2";
 const Home = () => {
   return (
-    <div className="home">
+    <>
       <Navbar />
       <SwiperApp />
+      <WelcomeSec/>
       <TherapistAndTreatment />
-      <IncreaseCounter />
+<IndividualSec/>
+<SwiperApp2/>
+       {/* <IncreaseCounter />
       <TeamSec />
       <PricingSec />
       <QuestionSec />
       <BottomSec />
       <Footer />
-      <Copyright />
-    </div>
+      <Copyright /> */}
+    </>
   );
 };
 

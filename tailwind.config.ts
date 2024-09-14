@@ -128,6 +128,10 @@ const config: Config = {
 
       screens: {
         "max-xlg": { max: "1492px" },
+        "max-xlg2": { max: "1400px" },
+        "max-xlg3": { max: "1300px" },
+        "max-xlg4": { max: "1200px" },
+        "max-xlg5": { max: "1100px" },
         "max-lg": { max: "1024px" },
         "max-md": { max: "768px" },
         "max-sm": { max: "640px" },
