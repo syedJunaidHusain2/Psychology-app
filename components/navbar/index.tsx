@@ -1,22 +1,15 @@
-import React, { useEffect, useState } from "react";
+import { navData } from "@/app/data";
+import Link from "next/link";
+import React, { useState } from "react";
 const Navbar = () => {
-  const [navOpt] = useState(["Home", "Services", "Blog", "Contact"]);
-  const [navCon, setNavCon] = useState("bg-transparent  text-white");
-
-  useEffect(() => {
-    const navBgChangeFunc = () => {
-      if (window.scrollY >= 620) {
-        setNavCon("bg-white text-black");
-      } else {
-        setNavCon("bg-transparent  text-white");
-      }
-    };
-    window.addEventListener("scroll", navBgChangeFunc);
-  }, []);
-
+  const [state, setState] = useState(false)
+  const navBgChangeFunc = () => {
+    setState(window.scrollY >= 630 ? true : false)
+  };
+  window.addEventListener("scroll", navBgChangeFunc);
   return (
     <nav
-      className={`${navCon} flex items-center justify-center top-0 z-10 fixed w-full`}
+      className={`${state ? "bg-white text-black shadow-md" : "bg-transparent text-white"} flex items-center justify-center top-0 z-10 fixed w-full`}
     >
       <div
         style={{ maxWidth: 1400 }}
@@ -24,23 +17,24 @@ const Navbar = () => {
       >
         <div
           style={{ width: "82%" }}
-          className="jost_regular py-2.5 flex items-center justify-between"
+          className="jost_regular h-[72px] flex items-center justify-between"
         >
-          {navOpt.map((opt, i) => {
+          {navData.map((navItem, i) => {
             return (
-              <span
+              <Link
+                href={navItem.url}
                 key={i}
-                className=" hover:underline text-center text-lg font-bold cursor-pointer select-none"
+                className={`font-${state ? "medium" : "normal"} hover:underline text-center text-lg  cursor-pointer select-none`}
               >
-                {opt}
-              </span>
+                {navItem.name}
+              </Link>
             );
           })}
           <div className=" flex items-center flex-col justify-center gap-1">
             <span className=" text-center text-sm font-bold select-none">
               Need Help?
             </span>
-            <span className=" text-center text-lg font-bold">
+            <span className={`text-center text-lg font-${state ? "medium" : "bold"}`}>
               +91 8303388143
             </span>
           </div>
