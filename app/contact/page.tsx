@@ -1,19 +1,14 @@
-import Link from 'next/link'
+import DetailAndInfoBox from '@/components/detail_and_info_box'
+import GetInTouch from '@/components/get_in_touch'
 import React from 'react'
-const data = [1, 2, 3, 4]
-const Contact = () => {
 
-    return (
-        <div>Contact
-            <div>
-                {data.map((item, id) => (
-                    <div>
-                        <Link href={`/contact/${item}`}>Contact/{item}</Link>
-                    </div>
-                ))}
-            </div>
-        </div>
-    )
+function Contact() {
+  return (
+    <>
+    <GetInTouch/>
+    <DetailAndInfoBox/>
+    </>
+  )
 }
 
 export default Contact

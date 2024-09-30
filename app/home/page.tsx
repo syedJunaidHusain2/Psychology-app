@@ -22,13 +22,13 @@ const Home = () => {
       <TherapistAndTreatment />
 <IndividualSec/>
 <SwiperApp2/>
-       {/* <IncreaseCounter />
+       <IncreaseCounter />
       <TeamSec />
       <PricingSec />
       <QuestionSec />
       <BottomSec />
       <Footer />
-      <Copyright /> */}
+      <Copyright />
     </>
   );
 };
