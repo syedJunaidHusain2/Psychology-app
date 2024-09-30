@@ -89,7 +89,7 @@ const Footer = () => {
     <div className='bg-[#f0ece9] relative px-6 md:px-20 lg:w-full lg:px-28 lg:gap-14 py-10 lg:py-20 flex flex-col lg:flex-row justify-evenly items-start xl:flex-row md:gap-14'>
       <div className='mb-6 lg:mb-0'>
         <Image 
-          src="/images/logo_one.png" 
+          src="/images/logo.png" 
           alt="logo" 
           width={150} 
           height={150} 

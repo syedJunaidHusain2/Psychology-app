@@ -19,3 +19,13 @@
 .poppins_regular {
   font-family: var(--font-poppins);
 }
+
+
+.blog-card:nth-child(odd) .blog-image {
+  height: 340px;
+}
+
+.blog-card:nth-child(even) .blog-image {
+  height: 200px;
+}
+
