@@ -3,8 +3,8 @@ import { Inter, Allison, Poppins, Jost } from "next/font/google";
 import "./globals.css";
 import 'animate.css';
 
-import {NextUIProvider} from "@nextui-org/react";
-
+import { NextUIProvider } from "@nextui-org/react";
+import Navbar from "../components/navbar/index"
 // const inter = Inter({ subsets: ["latin"] });
 
 const allison_init = Allison({
@@ -16,10 +16,10 @@ const jost_init = Jost({
   subsets: ["latin"],
   variable: "--font-jost",
 });
-const poppins_init  = Poppins({
+const poppins_init = Poppins({
   subsets: ["latin"],
   weight: ["400"],
-  variable : "--font-poppins",
+  variable: "--font-poppins",
 });
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,10 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${allison_init.variable} ${jost_init.variable} ${poppins_init.variable }`}
-        >
+        className={`${allison_init.variable} ${jost_init.variable} ${poppins_init.variable}`}
+      >
+        <Navbar />
         {children}
-      </body> 
+      </body>
     </html>
   );
 }
