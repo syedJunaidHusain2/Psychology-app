@@ -17,6 +17,6 @@ export const navData = [
     },
     {
         "name": "Contact",
-        "url": "/contact-us",
+        "url": "/contact",
     },
 ]
