@@ -20,7 +20,7 @@ function SwiperApp() {
         speed={500}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className=" w-full h-screen flex items-center justify-center"
+        className=" w-full h-[610px] flex items-center justify-center"
       >
         <SwiperSlide className="first-swiper w-full bg-center bg-no-repeat bg-cover flex items-center justify-center relative">
           <HeaderContent />

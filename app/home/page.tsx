@@ -15,7 +15,10 @@ const Home = () => {
   return (
     <div className="home">
       <SwiperApp />
+      <WelcomeSec />
       <TherapistAndTreatment />
+      <IndividualSec />
+      <SwiperApp2 />
       <IncreaseCounter />
       <TeamSec />
       <PricingSec />

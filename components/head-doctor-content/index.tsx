@@ -9,11 +9,11 @@ function HeadDoctorContent(param: { t: any }) {
     >
       <div
         className=" header-content-sec flex items-center justify-center "
-        style={{ width: "82%" }}
+        style={{ width: "84%" }}
       >
         <div
-          style={{ width: "45%" }}
-          className=" flex flex-col items-center justify-center text-white gap-4 relative bg-bg_black_light pb-32 rounded-2xl"
+          style={{ width: "48%" }}
+          className=" flex flex-col items-center justify-start text-white gap-4 relative bg-bg_black_light h-[320px] rounded-2xl max-lg4:h-[290px]"
         >
           <span className=" underline font-btnSize jost_regular">
             SCHEDULE YOUR SESSION
@@ -25,7 +25,7 @@ function HeadDoctorContent(param: { t: any }) {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quo
             pariatur quis repellat ipsam explicabo delectus!
           </p>
-          <img src={signature.src} className=" w-2/5 absolute top-32" alt="" />
+          <img src={signature.src} className=" w-2/5 absolute bottom-[-41px] max-lg2:bottom-[-32px] max-lg3:bottom-[-23px] " alt="" />
         </div>
       </div>
     </div>
