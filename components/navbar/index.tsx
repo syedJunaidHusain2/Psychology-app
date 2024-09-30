@@ -1,12 +1,23 @@
+"use client"
 import { navData } from "@/app/data";
+import { usePath } from "@/app/hooks/usePath";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 const Navbar = () => {
+  const path = usePath();
   const [state, setState] = useState(false)
   const navBgChangeFunc = () => {
     setState(window.scrollY >= 630 ? true : false)
   };
-  window.addEventListener("scroll", navBgChangeFunc);
+  console.log(state);
+  useEffect(() => {
+    if (path === "/") {
+      setState(false)
+      window.addEventListener("scroll", navBgChangeFunc);
+    } else {
+      setState(true)
+    }
+  }, [path])
   return (
     <nav
       className={`${state ? "bg-white text-black shadow-md" : "bg-transparent text-white"} flex items-center justify-center top-0 z-10 fixed w-full`}
