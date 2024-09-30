@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Allison, Poppins, Jost } from "next/font/google";
 import "./globals.css";
+import 'animate.css';
+
 import {NextUIProvider} from "@nextui-org/react";
 
 // const inter = Inter({ subsets: ["latin"] });
