@@ -9,71 +9,16 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode : "class",
   theme: {
-    accordion: {
-      defaultProps: {
-        icon: undefined,
-        className: "",
-        animate: {
-          unmount: {},
-          mount: {},
-        },
-        disabled: false,
-      },
-      styles: {
-        base: {
-          container: {
-            display: "block",
-            position: "relative",
-            width: "w-full",
-          },
-          header: {
-            initial: {
-              display: "flex",
-              justifyContent: "justify-between",
-              alignItems: "items-center",
-              width: "w-full",
-              py: "py-4",
-              borderWidth: "border-b border-b-blue-gray-100",
-              color: "text-red-600",
-              fontSmoothing: "antialiased",
-              fontFamily: "font-sans",
-              fontSize: "text-xl",
-              textAlign: "text-left",
-              fontWeight: "font-semibold",
-              lineHeight: "leading-snug",
-              userSelect: "select-none",
-              hover: "hover:text-red-600",
-              transition: "transition-colors",
-            },
-            active: { color: "text-blue-gray-900" },
-            icon: {
-              ml: "ml-4",
-            },
-          },
-          body: {
-            display: "block",
-            width: "w-full",
-            py: "py-4",
-            color: "text-gray-700",
-            fontSmoothing: "antialiased",
-            fontFamily: "font-sans",
-            fontSize: "text-sm",
-            fontWeight: "font-light",
-            lineHeight: "leading-normal",
-          },
-          disabled: {
-            pointerEvents: "pointer-events-none",
-            opacity: "opacity-50",
-          },
-        },
-      },
-    },
-
+   
     extend: {
       boxShadow: {
         custom:
           "0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)",
+      },
+      boxShadow_two: {
+        'custom-light': '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
       },
 
       backgroundImage: {
@@ -115,7 +60,7 @@ const config: Config = {
       },
       colors: {
         bg_black_light : "#00000025",
-        bg_color_primary: "#008000",
+        bg_color_primary: "#58bcb3",
         bg_color_secendory: "#5a9e7c",
         bg_color_tertiary: "#e1ffd4",
         p: "#7b8893",
@@ -133,11 +78,16 @@ const config: Config = {
         "max-xlg4": { max: "1200px" },
         "max-xlg5": { max: "1100px" },
         "max-lg": { max: "1024px" },
+        "max-md955": { max: "955px" },
         "max-md": { max: "768px" },
         "max-sm": { max: "640px" },
         "max-lg4": { max: "1146px" },
         "max-lg2": { max: "1348px" },
         "max-lg3": { max: "1208px" },
+        "between568-950": { 'min': '568px', 'max': '950px' },
+        "between280-568": { 'min': '280px', 'max': '568px' },
+        "between280-320": { 'min': '280px', 'max': '320px' },
+
       },
     },
   },
