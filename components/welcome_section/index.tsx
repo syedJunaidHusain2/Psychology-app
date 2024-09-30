@@ -1,20 +1,22 @@
-import React from "react";
-import img3 from "../../public/welcome_sec_images/img3.jpg";
-import img4 from "../../public/welcome_sec_images/img4.jpg";
-import img5 from "../../public/welcome_sec_images/img5.jpg";
-import img6 from "../../public/welcome_sec_images/img6.jpg";
+import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
-
+import {
+  leftContentFirstData,
+  leftContentSecondData,
+} from "../../app/data/WelcomeSectionData";
 function WelcomeSec() {
+  const [leftContentFirst, setLeftContentFirst] =
+    useState(leftContentFirstData);
+  const [leftContentSec, setLeftContentSec] = useState(leftContentSecondData);
   return (
-    <>
-      <section
+    <section className=" w-full flex items-center justify-center">
+      <div
         style={{ maxWidth: 1400 }}
         className="welcome-section-main-div flex mt-28 mb-28 w-full items-center justify-center"
       >
         <div
-          style={{ width: "82%" }}
+          style={{ width: "84%" }}
           className=" flex items-center justify-between "
         >
           <div
@@ -22,32 +24,30 @@ function WelcomeSec() {
             className="left-div-of-welcome-section-main-div flex items-center justify-start gap-5 "
           >
             <div className="first-img-div-of-welcome-section-main-div flex items-end justify-end flex-col gap-5 mt-9">
-              <img
-                className={`rounded-xl`}
-                width="180px"
-                src={img3.src}
-                alt=""
-              />
-              <img
-                className={`rounded-xl`}
-                width="270px"
-                src={img4.src}
-                alt=""
-              />
+              {leftContentFirst &&
+                leftContentFirst.map((d, i) => {
+                  return (
+                    <img
+                      className=" rounded-md"
+                      src={d._img.src}
+                      width={d._width}
+                      alt="img"
+                    />
+                  );
+                })}
             </div>
             <div className="second-img-div-of-welcome-section-main-div flex flex-col items-start justify-start gap-5 mb-9">
-              <img
-                className={`rounded-xl`}
-                width="270px"
-                src={img5.src}
-                alt=""
-              />
-              <img
-                className={`rounded-xl`}
-                width="180px"
-                src={img6.src}
-                alt=""
-              />
+              {leftContentSec &&
+                leftContentSec.map((d, i) => {
+                  return (
+                    <img
+                      className=" rounded-md"
+                      src={d._img.src}
+                      width={d._width}
+                      alt="img"
+                    />
+                  );
+                })}
             </div>
           </div>
           <div
@@ -123,8 +123,8 @@ function WelcomeSec() {
             </button>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 

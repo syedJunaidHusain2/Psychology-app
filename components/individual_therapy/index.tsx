@@ -10,7 +10,7 @@ function IndividualSec() {
           className="first-div-of-individual-therapy-section w-full flex items-start justify-center pt-28 pb-28"
         >
           <div
-            style={{ width: "82%" }}
+            style={{ width: "84%" }}
             className="flex items-center justify-between"
           >
             <div className="profile-img-and-name-div-of-first-div-of-individual-therapy-section flex w-1/5 flex-col items-center justify-center gap-2">
@@ -24,7 +24,7 @@ function IndividualSec() {
                 Individual Therapy
               </span>
             </div>
-            <p className="p-of-first-div-of-individual-therapy-section text-white w-3/4 text-3xl leading-h2 font-extrabold jost_regular">
+            <p className="p-of-first-div-of-individual-therapy-section text-justify text-white w-3/4 text-3xl leading-h2 font-extrabold jost_regular">
               Mindthera is exceptional! Their psychologists are highly
               professional and caring. The atmosphere is welcoming and calming,
               and the staff provides outstanding support. Thank you, Mindthera,

@@ -20,7 +20,10 @@ const Home = () => {
       
       <Navbar />
       <SwiperApp />
+      <WelcomeSec />
       <TherapistAndTreatment />
+      <IndividualSec />
+      <SwiperApp2 />
       <IncreaseCounter />
       <TeamSec />
       <PricingSec />
