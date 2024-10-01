@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Allison, Poppins, Jost } from "next/font/google";
 import "./globals.css";
 import 'animate.css';
+import Navbar from "./components/navbar";
 
-import { NextUIProvider } from "@nextui-org/react";
-import Navbar from "../components/navbar/index"
 // const inter = Inter({ subsets: ["latin"] });
 
 const allison_init = Allison({

@@ -1,5 +1,4 @@
 import React from "react";
-import individualFirstProfileImg from "../../public/individual_first_profile_img.jpg";
 import "./styles.scss";
 function IndividualSec() {
   return (
@@ -15,7 +14,7 @@ function IndividualSec() {
           >
             <div className="profile-img-and-name-div-of-first-div-of-individual-therapy-section flex w-1/5 flex-col items-center justify-center gap-2">
               <img
-                src={individualFirstProfileImg.src}
+                src={"/individual_first_profile_img.jpg"}
                 className=" w-full rounded-full"
                 alt=""
               />

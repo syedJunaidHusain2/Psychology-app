@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss";
-import signature from "../../public/doctor_slider_img/signature.svg";
+// import signature from "../../public/doctor_slider_img/signature.svg";
+
 function HeadDoctorContent(param: { t: any }) {
   return (
     <div
@@ -25,7 +26,7 @@ function HeadDoctorContent(param: { t: any }) {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quo
             pariatur quis repellat ipsam explicabo delectus!
           </p>
-          <img src={signature.src} className=" w-2/5 absolute bottom-[-41px] max-lg2:bottom-[-32px] max-lg3:bottom-[-23px] " alt="" />
+          <img src={"/doctor_slider_img/signature.svg"} className=" w-2/5 absolute bottom-[-41px] max-lg2:bottom-[-32px] max-lg3:bottom-[-23px] " alt="" />
         </div>
       </div>
     </div>

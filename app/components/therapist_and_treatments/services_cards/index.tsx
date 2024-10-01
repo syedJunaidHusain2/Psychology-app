@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
-import { servicesCardContent } from "../../../app/data/ServicesCardData";
+import { servicesCardContent } from "../../../data/ServicesCardData";
+
 function ServicesCard() {
   const [servicesCardContentData] = useState(servicesCardContent);
   return (

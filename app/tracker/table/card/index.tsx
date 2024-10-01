@@ -1,4 +1,4 @@
-import StarRating from '@/components/starRating';
+import StarRating from '@/app/components/starRating';
 import React from 'react';
 
 const Card: React.FC = () => {

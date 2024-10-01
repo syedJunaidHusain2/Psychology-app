@@ -1,4 +1,4 @@
-import { IconButton } from '../../app/MTailwind';
+import { IconButton } from '../../MTailwind';
 import Image from 'next/image';
 import React from 'react';
 import { FaFacebookF } from "react-icons/fa";
