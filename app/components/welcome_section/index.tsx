@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa6";
 import {
   leftContentFirstData,
   leftContentSecondData,
-} from "../../app/data/WelcomeSectionData";
+} from "../../data/WelcomeSectionData";
 function WelcomeSec() {
   const [leftContentFirst, setLeftContentFirst] =
     useState(leftContentFirstData);

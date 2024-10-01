@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import officeImg from "../../public/5-1.webp";
 import {
   IoLocationOutline,
   IoMailOutline,
@@ -30,7 +29,9 @@ function GetInTouch() {
               <div className=" w-full bottom-div-of-our-office-div-of-left-div-of-get-in-touch flex items-center justify-between">
                 <div className=" w-[48%] img-div-of-bottom-div-of-our-office-div-of-left-div-of-get-in-touch relative flex items-center justify-center rounded-xl overflow-hidden">
                   <Image
-                    src={officeImg}
+                    src={"/5-1.webp"}
+                    width={100}
+                    height={100}
                     alt="img"
                     className=" w-full brightness-75"
                   />

@@ -1,8 +1,6 @@
-import PricingComp from "@/components/pricingComp";
 import React, { useState } from "react";
-import Image from "next/image";
-import { url } from "inspector";
 import "./Pricind.css";
+import PricingComp from "@/app/components/pricingComp";
 
 const PricingSec = () => {
   // const [pricingData, setpricingData] = useState('')

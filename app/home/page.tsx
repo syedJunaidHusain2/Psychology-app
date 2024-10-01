@@ -1,5 +1,4 @@
 "use client";
-import SwiperApp from "@/components/swiper";
 import "./style.css";
 import PricingSec from "./pricingSec";
 import QuestionSec from "./questionSec";
@@ -7,11 +6,13 @@ import BottomSec from "./bottomSec";
 import Footer from "./footer";
 import Copyright from "./copyright";
 import TeamSec from "./teamSec";
-import IncreaseCounter from "../../components/increaseCounter";
-import TherapistAndTreatment from "@/components/therapist_and_treatments";
-import WelcomeSec from "@/components/welcome_section";
-import IndividualSec from "@/components/individual_therapy";
-import SwiperApp2 from "@/components/swiper2";
+import WelcomeSec from "../components/welcome_section";
+import TherapistAndTreatment from "../components/therapist_and_treatments";
+import IndividualSec from "../components/individual_therapy";
+import SwiperApp2 from "../components/swiper2";
+import IncreaseCounter from "../components/increaseCounter";
+import SwiperApp from "../components/swiper";
+
 
 const Home = () => {
   return (

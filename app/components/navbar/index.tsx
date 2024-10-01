@@ -3,21 +3,27 @@ import { navData } from "@/app/data";
 import { usePath } from "@/app/hooks/usePath";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+
 const Navbar = () => {
   const path = usePath();
-  const [state, setState] = useState(false)
+  const [state, setState] = useState(false);
+
   const navBgChangeFunc = () => {
-    setState(window.scrollY >= 630 ? true : false)
+    setState(window.scrollY >= 630 ? true : false);
   };
-  console.log(state);
+
   useEffect(() => {
     if (path === "/") {
-      setState(false)
+      setState(false);
       window.addEventListener("scroll", navBgChangeFunc);
     } else {
-      setState(true)
+      setState(true);
     }
-  }, [path])
+    return () => {
+      window.removeEventListener("scroll", navBgChangeFunc);
+    };
+  }, [path]);
+
   return (
     <nav
       className={`${state ? "bg-white text-black shadow-md" : "bg-transparent text-white"} flex items-center justify-center top-0 z-10 fixed w-full`}
