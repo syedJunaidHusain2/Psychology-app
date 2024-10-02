@@ -23,7 +23,7 @@ function IndividualSec() {
                 Individual Therapy
               </span>
             </div>
-            <p className="p-of-first-div-of-individual-therapy-section text-justify text-white w-3/4 text-3xl leading-h2 font-extrabold jost_regular max-md:text-xl">
+            <p className="p-of-first-div-of-individual-therapy-section text-justify text-white w-3/4 text-6xl font-medium jost_regular allison_regular media-max-900:text-5xl max-md:text-4xl">
               Mindthera is exceptional! Their psychologists are highly
               professional and caring. The atmosphere is welcoming and calming,
               and the staff provides outstanding support. Thank you, Mindthera,

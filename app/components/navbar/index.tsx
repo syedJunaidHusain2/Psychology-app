@@ -91,7 +91,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={` hidden max-md955:flex fixed bg-bg_color_secendory h-screen w-screen items-center justify-center flex-col gap-4 ${navbarCondition} text-white transition-all duration-250 ease-in-out`}
+        className={` hidden max-md955:flex fixed bg-bg_color_primary h-screen w-screen items-center justify-center flex-col gap-4 ${navbarCondition} text-white transition-all duration-250 ease-in-out`}
         onClick={() => setNavbarCondition("-top-[100vh]")}
       >
         {navData.map((navItem, i) => {

@@ -60,8 +60,8 @@ const config: Config = {
       },
       colors: {
         bg_black_light: "#00000025",
-        bg_color_primary: "#58bcb3",
-        bg_color_secendory: "#5a9e7c",
+        bg_color_secendory: "#58bcb3",
+        bg_color_primary: "#5a9e7c",
         bg_color_tertiary: "#e1ffd4",
         p: "#7b8893",
         p2: "white",

@@ -10,7 +10,7 @@ function WelcomeSec() {
     useState(leftContentFirstData);
   const [leftContentSec, setLeftContentSec] = useState(leftContentSecondData);
   return (
-    <section className=" w-full flex items-center justify-center">
+    <section className=" w-full flex items-center justify-center ">
       <div
         style={{ maxWidth: 1400 }}
         className="welcome-section-main-div flex mt-28 mb-28 w-full items-center justify-center media-max-900:m-0"
@@ -52,7 +52,7 @@ function WelcomeSec() {
           <div
             className="right-div-of-welcome-section-main-div flex flex-col w-[48%] items-start justify-center gap-5 max-lg3:gap-3 media-max-900:w-full media-max-900:items-center "
           >
-            <span className=" text-base underline jost_regular font-bold text-black media-max-900:w-full media-max-900:text-center max-md:text-sm">
+            <span className="allison_regular text-3xl font-bold  media-max-900:w-full media-max-900:text-center">
               Welcome
             </span>
             <h3 className="w-full text-4xl jost_regular font-bold  media-max-900:text-center max-md:text-3xl">
@@ -68,7 +68,7 @@ function WelcomeSec() {
               and personal growth. Trust Mindthera for all your psychotherapy
               needs.
             </p>
-            <div className="flex w-full items-start justify-start gap-8 media-max-900:justify-between media-max-900:items-center media-max-900:mt-4 media-max-1050:flex-col media-max-900:flex-row">
+            <div className="flex w-full items-start justify-start gap-8 media-max-900:justify-between media-max-900:items-center media-max-900:mt-4 media-max-1050:flex-col media-max-900:flex-row media-max-900:hidden">
               <ul className=" min-w-fit  flex flex-col items-start justify-center gap-1">
                 <li className="text-sm font-bold flex max-md:text-xs">
                   <span className="mr-2 text-lg text-bg_color_primary max-md:text-base">

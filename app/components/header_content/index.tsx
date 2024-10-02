@@ -13,15 +13,15 @@ function HeaderContent() {
         <div
           className=" flex flex-col items-start w-[48%] justify-center text-white gap-4 max-md:gap-4"
         >
-          <span className=" underline font-btnSize jost_regular max-md:text-sm">
+          <span className="  allison_regular text-5xl font-medium ">
             MindThera
           </span>
-          <h1 className="  flex flex-col items-start justify-center ">
+          <h1 className="  flex flex-col items-start justify-center gap-1 max-md:gap-0">
             <span className="  jost_regular text-6xl font-medium media-max-976:text-5xl max-md:text-4xl max-md:leading-[50px]">
 
             Begin Your
             </span>
-            <span  className="inner-peace-journey allison_regular text-8xl max-lg2:text-newH1 max-lg3:text-newH2 media-max-976:text-5xl media-max-976:text-nowrap media-max-900:text-wrap max-md:leading-[50px]">
+            <span  className=" jost_regular text-3xl media-max-976:text-2xl max-md:text-lg">
               Inner Peace Journey
             </span>
           </h1>
@@ -29,7 +29,7 @@ function HeaderContent() {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quo
             pariatur quis repellat ipsam explicabo delectus!
           </p>
-          <button className=" font-btnSize jost_regular bg-bg_color_primary px-4 py-2 rounded-full hover:underline max-md:text-sm">
+          <button className=" font-btnSize jost_regular bg-bg_color_primary px-4 py-2 rounded-full hover:underline max-md:text-sm cursor-pointer">
             Our Services
           </button>
         </div>

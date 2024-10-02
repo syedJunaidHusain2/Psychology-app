@@ -2,7 +2,7 @@ import React from "react";
 import ServicesCard from "./services_cards";
 function TherapistAndTreatment() {
   return (
-    <section className=" w-full therapist-and-treatments-sec flex flex-col items-center justify-center py-20 bg-green-100">
+    <section className=" w-full therapist-and-treatments-sec flex flex-col items-center justify-center py-20">
       <div
         style={{ maxWidth: 1400 }}
         className=" w-full flex flex-col items-center justify-center "
@@ -12,7 +12,7 @@ function TherapistAndTreatment() {
           className=" flex flex-col items-center justify-center gap-2 max-md:gap-4"
         >
           <div className="heading-div-of-therapist-and-treatments-sec flex items-center justify-center flex-col max-md:gap-4">
-            <span className="services-span-of-heading-div-of-therapist-and-treatments-sec text-base font-extrabold underline jost_regular max-md:text-sm ">
+            <span className="services-span-of-heading-div-of-therapist-and-treatments-sec allison_regular text-3xl font-bold ">
               Our Services
             </span>
             <h3 className="h3-of-heading-div-of-therapist-and-treatments-sec flex items-baseline justify-center gap-4">
