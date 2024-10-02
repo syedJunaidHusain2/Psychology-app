@@ -20,13 +20,13 @@ function ServicesCard() {
                   width={"100%"}
                   className="rounded-2xl transition-transform duration-500 ease-in-out transform group-hover:scale-125"
                 />
-                <button className="jost_regular bg-bg_color_primary py-3 px-5 rounded-full text-sm font-bold text-white absolute items-center justify-center hidden hover:underline transition-all group-hover:flex">
+                <button className="jost_regular bg-bg_color_primary py-3 px-5 rounded-full text-sm font-bold text-white absolute items-center justify-center hidden hover:underline transition-all group-hover:flex max-md:text-xs">
                   Get Started
                 </button>
               </div>
 
-              <h5 className=" text-h4 jost_regular font-medium">{s.name}</h5>
-              <p className="jost_regular text-p">{s.para}</p>
+              <h5 className=" text-h4 jost_regular font-medium max-md:text-lg">{s.name}</h5>
+              <p className="jost_regular text-p max-md:text-sm">{s.para}</p>
             </div>
           );
         })}

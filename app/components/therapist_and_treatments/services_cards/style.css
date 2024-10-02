@@ -6,3 +6,14 @@
     width: 31%;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .services-card {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 594px) {
+  .services-card {
+    width: 46%;
+  }
+}

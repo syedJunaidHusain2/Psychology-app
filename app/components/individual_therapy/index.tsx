@@ -18,12 +18,12 @@ function IndividualSec() {
                 className=" w-full rounded-full"
                 alt=""
               />
-              <span className=" text-p2 font-bold">Jeffery Mussman</span>
-              <span className=" text-btnSize text-white">
+              <span className=" text-p2 font-bold media-max-778:text-center max-md:text-sm">Jeffery Mussman</span>
+              <span className=" text-btnSize text-white media-max-680:text-center max-md:text-xs">
                 Individual Therapy
               </span>
             </div>
-            <p className="p-of-first-div-of-individual-therapy-section text-justify text-white w-3/4 text-3xl leading-h2 font-extrabold jost_regular">
+            <p className="p-of-first-div-of-individual-therapy-section text-justify text-white w-3/4 text-3xl leading-h2 font-extrabold jost_regular max-md:text-xl">
               Mindthera is exceptional! Their psychologists are highly
               professional and caring. The atmosphere is welcoming and calming,
               and the staff provides outstanding support. Thank you, Mindthera,

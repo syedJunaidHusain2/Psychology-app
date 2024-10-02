@@ -21,14 +21,14 @@ const Home = () => {
       <WelcomeSec />
       <TherapistAndTreatment />
       <IndividualSec />
-      <SwiperApp2 />
       <IncreaseCounter />
-      <TeamSec />
+      <SwiperApp2 />
+      {/* <TeamSec />
       <PricingSec />
       <QuestionSec />
       <BottomSec />
       <Footer />
-      <Copyright />
+      <Copyright /> */}
     </div>
   );
 };
