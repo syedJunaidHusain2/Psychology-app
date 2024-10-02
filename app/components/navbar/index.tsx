@@ -55,7 +55,7 @@ const Navbar = () => {
                 key={i}
                 className={`font-${
                   state ? "medium" : "normal"
-                } hover:underline text-center text-lg  cursor-pointer select-none max-md955:hidden`}
+                } hover:underline text-center text-sm cursor-pointer select-none max-md955:hidden`}
               >
                 {navItem.name}
               </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
               Need Help?
             </span>
             <span
-              className={`text-center text-lg font-${
+              className={`text-center text-base font-${
                 state ? "medium" : "bold"
               }`}
             >
@@ -78,7 +78,7 @@ const Navbar = () => {
             Make Appointment
           </button>
           <div className=" hidden items-center justify-center gap-4 max-md955:flex">
-          <button className=" text-white border-none rounded-3xl text-center bg-bg_color_primary px-6 py-2 text-sm font-bold cursor-pointer select-none hover:underline max-md:text-xs">
+          <button className=" text-white border-none rounded-3xl text-center bg-bg_color_primary px-6 py-2 text-sm font-bold cursor-pointer select-none hover:underline max-md:text-xs">  
             Make Appointment
           </button>
           <div
@@ -101,7 +101,7 @@ const Navbar = () => {
               key={i}
               className={`font-${
                 state ? "medium" : "normal"
-              } hover:underline text-center text-lg  cursor-pointer select-none max-md:text-base `}
+              } hover:underline text-center text-sm  cursor-pointer select-none  `}
             >
               {navItem.name}
             </Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
               Need Help?
             </span>
             <span
-              className={`text-center text-lg font-${
+              className={`text-center text-base font-${
                 state ? "medium" : "bold"
               } max-md:text-base`}
             >
