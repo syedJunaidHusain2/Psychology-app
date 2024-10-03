@@ -11,21 +11,21 @@ function HeaderContent() {
         style={{ width: "84%" }}
       >
         <div
-          className=" flex flex-col items-start w-[48%] justify-center text-white gap-4 max-md:gap-4"
+          className=" flex flex-col items-start w-[48%] justify-center text-white gap-4 max-md:gap-4 media-max-500:w-full media-max-500:items-center"
         >
           <span className="  allison_regular text-5xl font-medium ">
             MindThera
           </span>
-          <h1 className="  flex flex-col items-start justify-center gap-1 max-md:gap-0">
+          <h1 className="  flex flex-col items-start justify-center gap-1 max-md:gap-0 media-max-500:items-center">
             <span className="  jost_regular text-6xl font-medium media-max-976:text-5xl max-md:text-4xl max-md:leading-[50px]">
 
             Begin Your
             </span>
-            <span  className=" jost_regular text-3xl media-max-976:text-2xl max-md:text-lg">
+            <span  className=" jost_regular text-3xl media-max-976:text-2xl max-md:text-lg ">
               Inner Peace Journey
             </span>
           </h1>
-          <p className=" text-p2 max-md:text-sm">
+          <p className=" text-p2 max-md:text-sm media-max-500:w-full media-max-500:text-center">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quo
             pariatur quis repellat ipsam explicabo delectus!
           </p>

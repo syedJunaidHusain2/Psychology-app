@@ -77,8 +77,8 @@ const Navbar = () => {
           <button className=" text-white border-none rounded-3xl text-center bg-bg_color_primary px-6 py-2 text-sm font-bold cursor-pointer select-none hover:underline max-md955:hidden ">
             Make Appointment
           </button>
-          <div className=" hidden items-center justify-center gap-4 max-md955:flex">
-          <button className=" text-white border-none rounded-3xl text-center bg-bg_color_primary px-6 py-2 text-sm font-bold cursor-pointer select-none hover:underline max-md:text-xs">  
+          <div className=" hidden items-center justify-center gap-4 max-md955:flex media-max-322:gap-1 ">
+          <button className=" text-white border-none rounded-3xl text-center bg-bg_color_primary px-6 py-2 text-sm font-bold cursor-pointer select-none hover:underline max-md:text-xs media-max-322:px-2">  
             Make Appointment
           </button>
           <div

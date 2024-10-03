@@ -6,9 +6,9 @@ import {
   leftContentSecondData,
 } from "../../data/WelcomeSectionData";
 function WelcomeSec() {
-  const [leftContentFirst, setLeftContentFirst] =
+  const [leftContentFirst] =
     useState(leftContentFirstData);
-  const [leftContentSec, setLeftContentSec] = useState(leftContentSecondData);
+  const [leftContentSec] = useState(leftContentSecondData);
   return (
     <section className=" w-full flex items-center justify-center ">
       <div
@@ -17,41 +17,35 @@ function WelcomeSec() {
       >
         <div
           style={{ width: "84%" }}
-          className=" flex items-center justify-between media-max-900:flex-col-reverse media-max-900:gap-20 media-max-900:py-14"
+          className=" flex items-center justify-between media-max-900:flex-col-reverse media-max-900:gap-20 media-max-900:py-14 media-max-500:pb-0 media-max-500:gap-10"
         >
-          <div
-            className="left-div-of-welcome-section-main-div w-[48%] flex items-center justify-start gap-5 media-max-900:w-full media-max-900:justify-center media-max-900:gap-6"
-          >
-            <div className="first-img-div-of-welcome-section-main-div flex items-end justify-end flex-col gap-5 mt-9">
+          <div className="left-div-of-welcome-section-main-div w-[48%] flex items-center justify-start gap-5 media-max-900:w-full media-max-900:justify-between media-max-900:gap-0">
+            <div className="first-img-div-of-welcome-section-main-div flex items-end justify-end flex-col gap-5 mt-9 w-full media-max-900:gap-8 media-max-900:mt-8 media-max-900:w-[48%] media-max-812:gap-6 media-max-594:gap-4 ">
               {leftContentFirst &&
                 leftContentFirst.map((d, i) => {
                   return (
                     <img
-                      className=" rounded-md"
+                      className={` rounded-md ${d._width} media-max-900:${d._width === "w-[70%]" ? "w-3/4" : "w-full"}`}
                       src={d._img.src}
-                      width={d._width}
                       alt="img"
                     />
                   );
                 })}
             </div>
-            <div className="second-img-div-of-welcome-section-main-div flex flex-col items-start justify-start gap-5 mb-9">
+            <div className="second-img-div-of-welcome-section-main-div flex flex-col items-start justify-start gap-5 mb-9 w-full media-max-900:gap-8 media-max-900:mb-8 media-max-900:w-[48%] media-max-812:gap-6 media-max-594:gap-4">
               {leftContentSec &&
                 leftContentSec.map((d, i) => {
                   return (
                     <img
-                      className=" rounded-md"
+                      className={` rounded-md  ${d._width} media-max-900:${d._width === "w-[70%]" ? "w-3/4" : "w-full"}`}
                       src={d._img.src}
-                      width={d._width}
                       alt="img"
                     />
                   );
                 })}
             </div>
           </div>
-          <div
-            className="right-div-of-welcome-section-main-div flex flex-col w-[48%] items-start justify-center gap-5 max-lg3:gap-3 media-max-900:w-full media-max-900:items-center "
-          >
+          <div className="right-div-of-welcome-section-main-div flex flex-col w-[48%] items-start justify-center gap-5 max-lg3:gap-3 media-max-900:w-full media-max-900:items-center ">
             <span className="allison_regular text-3xl font-bold  media-max-900:w-full media-max-900:text-center">
               Welcome
             </span>
@@ -96,7 +90,9 @@ function WelcomeSec() {
                 </li>
               </ul>
               <ul className="  flex flex-col items-start justify-center gap-1">
-                <li className=" text-xl font-black jost_regular max-md:text-lg">Execelent</li>
+                <li className=" text-xl font-black jost_regular max-md:text-lg">
+                  Execelent
+                </li>
                 <li className=" text-lg text-yellow-400 font-black flex max-md:text-base">
                   <FaStar />
                   <FaStar />
@@ -109,7 +105,7 @@ function WelcomeSec() {
                 </li>
                 <li>
                   <img
-                  className=" max-md:w-16 "
+                    className=" max-md:w-16 "
                     width="90"
                     src="https://themewant.com/products/wordpress/mindthera/wp-content/uploads/2024/06/trustpilot-invert-1.webp"
                     alt=""

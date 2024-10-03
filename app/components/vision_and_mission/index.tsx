@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { visionAndMissionContent } from "../../app/data/Vision&MissionData";
+import { visionAndMissionContent } from "../../data/Vision&MissionData";
 function VisionAndMission() {
   const [visionAndMissionContentData] = useState(visionAndMissionContent);
   return (

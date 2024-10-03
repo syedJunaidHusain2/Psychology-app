@@ -11,7 +11,7 @@ function ServicesCard() {
           return (
             <div
               key={i}
-              className="services-card flex flex-col items-start justify-center gap-4"
+              className="services-card flex flex-col items-start justify-center gap-4 ]"
             >
               <div className="relative w-full flex items-center justify-center overflow-hidden rounded-2xl group">
                 <img

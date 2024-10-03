@@ -10,7 +10,7 @@ import HeadDoctorContent from "../head-doctor-content";
 function SwiperApp2() {
   let t = "hi";
   return (
-    <>
+    <div className=" swiper-2 w-full flex items-center justify-center">
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -42,7 +42,7 @@ function SwiperApp2() {
           <HeadDoctorContent t={t} />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 export default SwiperApp2;
