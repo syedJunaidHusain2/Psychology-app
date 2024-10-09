@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${allison_init.variable} ${jost_init.variable} ${poppins_init.variable}`}
       >
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>

@@ -3,7 +3,7 @@ import "./styles.scss";
 function HeaderContent() {
   return (
     <div
-      className=" flex items-center justify-center w-full absolute"
+      className=" flex items-center justify-center w-full absolute media-max-900:bottom-4 max-md:bottom-auto "
       style={{ maxWidth: 1400 }}
     >
       <div
@@ -11,23 +11,25 @@ function HeaderContent() {
         style={{ width: "84%" }}
       >
         <div
-          style={{ width: "48%" }}
-          className=" flex flex-col items-start justify-center text-white gap-4 "
+          className=" flex flex-col items-start w-[48%] justify-center text-white gap-4 max-md:gap-4 media-max-500:w-full media-max-500:items-center"
         >
-          <span className=" underline font-btnSize jost_regular">
+          <span className="  allison_regular text-5xl font-medium ">
             MindThera
           </span>
-          <h1 className=" jost_regular text-6xl font-medium flex flex-col items-start justify-center">
+          <h1 className="  flex flex-col items-start justify-center gap-1 max-md:gap-0 media-max-500:items-center">
+            <span className="  jost_regular text-6xl font-medium media-max-976:text-5xl max-md:text-4xl max-md:leading-[50px]">
+
             Begin Your
-            <span className=" allison_regular text-8xl max-lg2:text-newH1 max-lg3:text-newH2">
+            </span>
+            <span  className=" jost_regular text-3xl media-max-976:text-2xl max-md:text-lg ">
               Inner Peace Journey
             </span>
           </h1>
-          <p className=" text-p2">
+          <p className=" text-p2 max-md:text-sm media-max-500:w-full media-max-500:text-center">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quo
             pariatur quis repellat ipsam explicabo delectus!
           </p>
-          <button className=" font-btnSize jost_regular bg-bg_color_primary px-4 py-2 rounded-full hover:underline">
+          <button className=" font-btnSize jost_regular bg-bg_color_primary px-4 py-2 rounded-full hover:underline max-md:text-sm cursor-pointer">
             Our Services
           </button>
         </div>

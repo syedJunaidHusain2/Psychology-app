@@ -21,8 +21,8 @@ const Home = () => {
       <WelcomeSec />
       <TherapistAndTreatment />
       <IndividualSec />
-      <SwiperApp2 />
       <IncreaseCounter />
+      <SwiperApp2 />
       <TeamSec />
       <PricingSec />
       <QuestionSec />
