@@ -4,19 +4,19 @@ export const navData = [
         "url": "/",
     },
     {
-        "name": "Services",
-        "url": "/services",
-    },
-    {
         "name": "Blog",
         "url": "/blog",
     },
     {
-        "name": "Your's Tracker",
-        "url": "/tracker",
+        "name": "Contact",
+        "url": "/contact",
     },
     {
-        "name": "Contact",
+        "name": "Services",
+        "url": "/services",
+    },
+    {
+        "name": "Your's Tracker",
         "url": "/contact",
     },
 ]

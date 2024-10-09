@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import { Inter, Allison, Poppins, Jost } from "next/font/google";
 import "./globals.css";
-import 'animate.css';
+import "animate.css";
 import Navbar from "./components/navbar";
+import UserContextProvider from "./context/UserContextProvider";
+import Footer from "./home/footer";
+import Copyright from "./home/copyright";
 
 // const inter = Inter({ subsets: ["latin"] });
 
 const allison_init = Allison({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-allison'
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-allison",
 });
 const jost_init = Jost({
   subsets: ["latin"],
@@ -34,8 +37,12 @@ export default function RootLayout({
       <body
         className={`${allison_init.variable} ${jost_init.variable} ${poppins_init.variable}`}
       >
-        {/* <Navbar /> */}
-        {children}
+        <UserContextProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <Copyright />
+        </UserContextProvider>
       </body>
     </html>
   );
