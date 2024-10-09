@@ -7,9 +7,9 @@ const CurrentDate = () => {
     const day = currentDate.getDate();
     const month = currentDate.toLocaleString('default', { month: 'short' });
     
-    const formattedDate = `${day} ${month} ${year}`;
+    const formattedDate = `${day} ${month}`;
   return (
-    <div className="text-[10px] text-gray-600 uppercase">{formattedDate}</div>
+    <div className="text-[12px] text-gray-500 uppercase">{formattedDate}</div>
   )
 }
 
