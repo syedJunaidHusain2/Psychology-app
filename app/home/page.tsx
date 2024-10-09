@@ -23,12 +23,12 @@ const Home = () => {
       <IndividualSec />
       <IncreaseCounter />
       <SwiperApp2 />
-      {/* <TeamSec />
+      <TeamSec />
       <PricingSec />
       <QuestionSec />
       <BottomSec />
       <Footer />
-      <Copyright /> */}
+      <Copyright />
     </div>
   );
 };
