@@ -1,11 +1,12 @@
-import DetailAndInfoBox from '@/components/detail_and_info_box'
-import VisionAndMission from '@/components/vision_and_mission'
-import WhoWeAre from '@/components/who_we_are'
+
 import React from 'react'
+import WhoWeAre from '../components/who_we_are'
+import VisionAndMission from '../components/vision_and_mission'
+import DetailAndInfoBox from '../components/detail_and_info_box'
 
 const About = () => {
   return (<>
-  <WhoWeAre/>
+  <WhoWeAre />
   <VisionAndMission/>
   <DetailAndInfoBox/>
   </>

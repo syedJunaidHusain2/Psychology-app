@@ -36,3 +36,45 @@ main {
     }
   }
 }
+@media screen and (max-width:500px) {
+  main {
+    .who-we-are-container {
+      .who-we-are {
+        .left-div-of-who-we-are {
+          .img-div-of-left-div-of-who-we-are {
+            .overly-border {
+              .popup-videos {
+                span {
+                  width: 56px;
+                  height: 56px;}
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+@media screen and (max-width:500px) {
+  main {
+    .who-we-are-container {
+      .who-we-are {
+        .left-div-of-who-we-are {
+          .img-div-of-left-div-of-who-we-are {
+            .overly-border {
+              .popup-videos {
+                span {
+                  width: 48px;
+                  height: 48px;}
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
