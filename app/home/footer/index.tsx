@@ -103,16 +103,22 @@ const Footer = () => {
       <div className='mb-6 lg:mb-0'>
         <div className='lg:text-[16px] font-extrabold md:text-xl text-bg_color_primary my-4'>Company</div>
         {["Individual Therapy", "Couples Counseling", "Career Counseling", "Stress management", "Anxiety Treatment", "Depression Therapy"].map((item, index) => (
-          <div key={index} className='text-sm md:text-base text-gray-900 my-2 cursor-pointer hover:transition-transform  '>{item}</div>
+          <div key={index} className='text-sm md:text-base text-gray-900 my-2 cursor-pointer hover:transition-transform transform transition-transform duration-300 hover:text-bg_color_primary hover:scale-105 hover:translate-x-1  '>{item}</div>
         ))}
       </div>
       
       <div className='mb-6 lg:mb-0'>
-        <div className='lg:text-[16px] font-extrabold md:text-xl text-bg_color_primary my-4'>Our Services</div>
-        {["About Us", "Our Services", "Study Case", "Blog", "Contact Us"].map((item, index) => (
-          <div key={index} className='text-sm md:text-base text-gray-900 my-2 cursor-pointer hover:font-bold '>{item}</div>
-        ))}
-      </div>
+  <div className='lg:text-[16px] font-extrabold md:text-xl text-bg_color_primary my-4'>Our Services</div>
+  {["About Us", "Our Services", "Study Case", "Blog", "Contact Us"].map((item, index) => (
+    <div
+      key={index}
+      className='text-sm md:text-base text-gray-900 my-2 cursor-pointer transform transition-transform duration-300 hover:text-bg_color_primary hover:scale-105 hover:translate-x-1'
+    >
+      {item}
+    </div>
+  ))}
+</div>
+
       
       <div className='mb-6 lg:mb-0 '>
         <div className='flex items-center lg:text-[16px] md:text-xl text-bg_color_primary font-extrabold mt-4'> 
@@ -122,7 +128,7 @@ const Footer = () => {
         <div className='flex items-center lg:text-[16px]  md:text-xl text-bg_color_primary font-extrabold'> 
           <MdEmail className='mr-2'/> Send Messages
         </div>
-        <div className='text-sm md:text-base lg:text[14px] text-gray-900 mt-2 cursor-pointer hover:font-bold '>contact@mindthera.com</div>
+        <div className='text-sm md:text-base lg:text[14px] text-gray-900 mt-2 cursor-pointer '>contact@mindthera.com</div>
         <div className='flex justify-between items-center mt-6 md:mt-8'>
         <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white  cursor-pointer'>
             <FaXTwitter className='text-xl '/>
@@ -156,6 +162,4 @@ const Footer = () => {
 
   )
 }
-
 export default Footer;
-

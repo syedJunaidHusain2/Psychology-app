@@ -12,23 +12,26 @@ import IndividualSec from "../components/individual_therapy";
 import SwiperApp2 from "../components/swiper2";
 import IncreaseCounter from "../components/increaseCounter";
 import SwiperApp from "../components/swiper";
+import UserContextProvider from "../context/UserContextProvider";
 
 
 const Home = () => {
   return (
     <div className="home">
+         <UserContextProvider>
       <SwiperApp />
       <WelcomeSec />
       <TherapistAndTreatment />
       <IndividualSec />
-      <SwiperApp2 />
       <IncreaseCounter />
+      <SwiperApp2 />
       <TeamSec />
       <PricingSec />
       <QuestionSec />
       <BottomSec />
-      <Footer />
-      <Copyright />
+     
+      </UserContextProvider>
+
     </div>
   );
 };

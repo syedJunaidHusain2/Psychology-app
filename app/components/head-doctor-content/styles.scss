@@ -1,0 +1,31 @@
+@media screen and (max-width:640px) {
+    .header-content-sec{
+
+        .head-doctor-content-div{
+            gap: 8px;
+            height: 230px;
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .header-content-sec{
+
+        .head-doctor-content-div{
+         .dr-name-of-head-doctor-content-div{
+            font-size: 38px;
+         }   
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .header-content-sec{
+
+        .head-doctor-content-div{
+         width: 98%;
+         .signature{
+            width: 40%;
+         }
+        }
+    }
+}
