@@ -1,22 +1,22 @@
 export const navData = [
     {
-        "name": "Home",
-        "url": "/",
+        "label": "Home",
+        "href": "/",
     },
     {
-        "name": "Blog",
-        "url": "/blog",
+        "label": "Blog",
+        "href": "/blog",
     },
     {
-        "name": "Contact",
-        "url": "/contact",
+        "label": "Contact",
+        "href": "/contact",
     },
     {
-        "name": "Services",
-        "url": "/services",
+        "label": "Services",
+        "href": "/services",
     },
     {
-        "name": "Your's Tracker",
-        "url": "/contact",
+        "label": "Your's Tracker",
+        "href": "/tracker",
     },
 ]
