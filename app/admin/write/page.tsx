@@ -8,7 +8,7 @@ const AddBlog = () => {
     const [image, setImage] = useState(null);
     const [description, setDescription] = useState('');
 
-    const handleBlogSubmit = (e) => {
+    const handleBlogSubmit = (e:any) => {
         e.preventDefault();
         // Add form submission logic here
         console.log({ title, image, description });
@@ -39,7 +39,7 @@ const AddBlog = () => {
                             <input
                                 type="file"
                                 id="image"
-                                onChange={(e) => setImage(e.target.files[0])}
+                                onChange={(e:any) => setImage(e.target.files[0])}
                                 className="w-full pl-10 pr-4 py-3 border bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
                             />
                             <AiOutlineUpload className="absolute left-3 top-1/2 transform -translate-y-1/2 text-medium text-gray-600" />
@@ -54,7 +54,7 @@ const AddBlog = () => {
                             placeholder='Add Blog Description ...'
                             onChange={(e) => setDescription(e.target.value)}
                             className="w-full pl-4 pr-4 py-3 border bg-gray-100 rounded-md placeholder-gray-800 font-medium focus:outline-none focus:ring-2 focus:ring-gray-300"
-                            rows="4"
+                            rows={4}
                         />
                     </div>
 

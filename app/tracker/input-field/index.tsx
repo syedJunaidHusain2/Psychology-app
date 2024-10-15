@@ -2,14 +2,14 @@ import DateRangePicker from './dateRange';
 
 const InputField = ({
     setTasks, tasksState, addNewTask, handleTaskSubmission, mappedArray, setMappedArray, taskNumber, taskInput, setTaskInput
-}) => {
+}:any) => {
 
-    const handleChange = (e) => {
+    const handleChange = (e:any) => {
         e.preventDefault();
         setTaskInput(e.target.value);
     };
 
-    const handleChangeNumTimes = (e) => {
+    const handleChangeNumTimes = (e:any) => {
         e.preventDefault();
         const value = parseInt(e.target.value, 10);
 
@@ -30,7 +30,7 @@ const InputField = ({
         }
     };
 
-    const handleTimeChange = (index, timeValue) => {
+    const handleTimeChange = (index:any, timeValue:any) => {
         const updatedTimesArray = [...tasksState.taskDetails[taskNumber].timesArry];
         updatedTimesArray[index] = timeValue;
 
@@ -76,7 +76,7 @@ const InputField = ({
 
                 <div className='flex flex-col'>
                     <div className='flex gap-4 w-80 flex-wrap'>
-                        {mappedArray.map((_, id) => (
+                        {mappedArray.map((_:any, id:any) => (
                             <div key={id} className='flex gap-2 items-center'>
                                 <div className='text-sm text-gray-700'>{id + 1}</div>
                                 <div className="w-32 h-12 flex rounded-xl">

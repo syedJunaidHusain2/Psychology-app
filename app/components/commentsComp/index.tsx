@@ -7,7 +7,7 @@ import Image from "next/image";
 import UserContext from "@/app/context/UserContext";
 const CommentsComp = () => {
   const [inputValue, setInputValue] = useState("");
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState<string[]>([]);
   const { isOpen, setIsOpen } = useContext(UserContext);
 console.log(isOpen);
 
@@ -77,7 +77,7 @@ console.log(isOpen);
               width={50}
               height={50}
               className="rounded-full size-7 mr-2 "
-              onClick={() => handleInput()}
+              
             />
             <div className="text-[12px] text-gray-700 mr-2">
               Kunal Kumar <span>@kunal438</span>

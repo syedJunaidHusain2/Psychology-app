@@ -9,34 +9,31 @@ import { FaRegComment } from "react-icons/fa";
 import UserContext from "@/app/context/UserContext";
 import Link from "next/link";
 
-// Custom styles for nth-child to alternate image heights
 
-// style={{ boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)' }}
-// shadow-[0_10px_20px_rgba(0,0,0,0.19),_0_6px_6px_rgba(0,0,0,0.23)]
-const BlogComp = ({ title, heightCustom }) => {
+const BlogComp = ({ title, heightCustom }:any) => {
   const currentDate = new Date();
   const year = currentDate.getFullYear();
   const day = currentDate.getDate();
   const month = currentDate.toLocaleString("default", { month: "short" });
 
   const formattedDate = `${day} ${month} ${year}`;
+  console.log(title,'Title')
 
-  // Liked feature
   const [liked, setLiked] = useState(false); // State to track if the icon is liked
   const [likeCount, setLikeCount] = useState(0); // State to track the like count
 
   const handleLikeClick = () => {
     if (liked) {
-      setLikeCount(likeCount - 1); // Decrease like count if already liked
+      setLikeCount(likeCount - 1);
     } else {
-      setLikeCount(likeCount + 1); // Increase like count if not liked
+      setLikeCount(likeCount + 1); 
     }
-    setLiked(!liked); // Toggle liked state
+    setLiked(!liked); 
   };
 
   const { handleCommentToggle } = useContext(UserContext);
 
-  function limitCharacters(text, charLimit) {
+  function limitCharacters(text:any, charLimit:any) {
     if (text.length > charLimit) {
       return text.slice(0, charLimit) + "...";
     }

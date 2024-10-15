@@ -9,7 +9,7 @@ import CommentsComp from "../../components/commentsComp";
 
 const DetailedBlog = ({ params }: { params: { slug: string } }) => {
   const usePathname = params
-  console.log(params.blogid);
+  // console.log(params.blogid);
   
   const [liked, setLiked] = useState(false); // State to track if the icon is liked
   const [likeCount, setLikeCount] = useState(0); // State to track the like count
@@ -96,7 +96,7 @@ const DetailedBlog = ({ params }: { params: { slug: string } }) => {
         dolore?
       </div>
       <div>
-        <CommentsComp />
+        <CommentsComp/>
       </div>
     </div>
   );

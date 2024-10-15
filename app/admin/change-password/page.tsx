@@ -9,7 +9,7 @@ const ChangePassword = () => {
     const [showCurrentPassword, setShowCurrentPassword] = useState(false);
     const [showNewPassword, setShowNewPassword] = useState(false);
 
-    const handlePasswordChange = (e) => {
+    const handlePasswordChange = (e:any) => {
         e.preventDefault();
         console.log({ currentPassword, newPassword });
     };

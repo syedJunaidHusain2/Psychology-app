@@ -6,6 +6,7 @@ import Navbar from "./components/navbar";
 import UserContextProvider from "./context/UserContextProvider";
 import Footer from "./home/footer";
 import Copyright from "./home/copyright";
+import { ChakraProvider } from "@chakra-ui/react";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -38,10 +39,14 @@ export default function RootLayout({
         className={`${allison_init.variable} ${jost_init.variable} ${poppins_init.variable}`}
       >
         <UserContextProvider>
+          <ChakraProvider>
+
           <Navbar />
           {children}
           <Footer />
           <Copyright />
+          </ChakraProvider>
+
         </UserContextProvider>
       </body>
     </html>

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import useTheme from "../context/ThemeContext";
 import { settingsItems, sidebarItems } from '../constant';
 import Link from 'next/link';
-import Modal from './modal';
+import Modal from '../components/Modal';
 
 export default function Sidebar() {
     const router = useRouter()
@@ -14,7 +14,7 @@ export default function Sidebar() {
     const textColor = themeMode === "dark" ? 'text-white' : 'text-gray-700';
     const borderColor = themeMode === "dark" ? "border-stone-100" : "border-stone-300"
 
-    const onChangeBtn = (e) => {
+    const onChangeBtn = (e:any) => {
         const darkModeStatus = e.currentTarget.checked;
         if (darkModeStatus) {
             darkTheme();
@@ -23,7 +23,7 @@ export default function Sidebar() {
         }
     };
 
-    const handleItemClick = (item) => {
+    const handleItemClick = (item:any) => {
         setActiveItem(item);
         if (item === "Logout") {
             setIsModalOpen(true)
