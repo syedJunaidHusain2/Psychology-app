@@ -1,8 +1,6 @@
-import PricingComp from "@/components/pricingComp";
 import React, { useState } from "react";
-import Image from "next/image";
-import { url } from "inspector";
 import "./Pricind.css";
+import PricingComp from "@/app/components/pricingComp";
 
 const PricingSec = () => {
   // const [pricingData, setpricingData] = useState('')
@@ -33,7 +31,7 @@ const PricingSec = () => {
     },
   ];
   return (
-    <div style={{ backgroundImage: "url('/images/forest_image_three.jpg')" }}>
+    <div className="bg-bottom bg-cover bg-no-repeat w-full" style={{ backgroundImage: "url('/images/forest_image_three.jpg')" }}>
       <div className="max-w-[1400px] mx-auto">
         <div className="w-full h-full sm:bg-cover bg-inherit bg-bottom bg-no-repeat">
           <div className=" md:px-10 sm:px-12 px-6  py-20 min-h-screen mx-auto">

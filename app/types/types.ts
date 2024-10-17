@@ -1,7 +1,10 @@
-// types.ts
+export interface TaskDetail {
+  taskName: string;
+  numOfTimes: number;
+  timesArry: string[];
+}
+
 export interface TrackerState {
-    task: string;
-    numOfTimes: number;
-    timesArry: string[]; // Adjust if you expect a different type in the array
-  }
-  
+  taskDetails: TaskDetail[];
+  dateRangeArray: string[]; // Specify the type for date range, for example, string[] or Date[]
+}

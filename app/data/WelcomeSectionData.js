@@ -4,21 +4,21 @@ import img5 from "../../public/welcome_sec_images/img5.jpg";
 import img6 from "../../public/welcome_sec_images/img6.jpg";
 export const leftContentFirstData = [
   {
-    _width: "180px",
+    _width: "w-[70%]",
     _img: img3,
   },
   {
-    _width: "270px",
+    _width: "w-[90%]",
     _img: img4,
   },
 ];
 export const leftContentSecondData = [
   {
-    _width: "270px",
+    _width: "w-[90%]",
     _img: img5,
   },
   {
-    _width: "180px",
+    _width: "w-[70%]",
     _img: img6,
   },
 ];

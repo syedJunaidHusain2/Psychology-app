@@ -1,73 +1,115 @@
-import { useFormik } from 'formik'
+import DateRangePicker from './dateRange';
 
-const InputField = ({ setState, state }) => {
+const InputField = ({
+    setTasks, tasksState, addNewTask, handleTaskSubmission, mappedArray, setMappedArray, taskNumber, taskInput, setTaskInput
+}:any) => {
 
-    const formik = useFormik({
-        initialValues : {
-            
+    const handleChange = (e:any) => {
+        e.preventDefault();
+        setTaskInput(e.target.value);
+    };
+
+    const handleChangeNumTimes = (e:any) => {
+        e.preventDefault();
+        const value = parseInt(e.target.value, 10);
+
+        // Make a copy of taskDetails and update the numOfTimes and timesArry
+        const updatedTaskDetails = [...tasksState.taskDetails];
+        updatedTaskDetails[taskNumber] = {
+            ...updatedTaskDetails[taskNumber],
+            numOfTimes: value >= 5 ? 5 : value <= 0 ? 0 : value,
+            timesArry: Array(value >= 5 ? 5 : value <= 0 ? 0 : value).fill("")
+        };
+        setTasks({
+            ...tasksState,
+            taskDetails: updatedTaskDetails
+        });
+        if (value <= 5) {
+            const newArray = Array.from({ length: value }, (_, index) => index + 1);
+            setMappedArray(newArray);
         }
-    })
+    };
+
+    const handleTimeChange = (index:any, timeValue:any) => {
+        const updatedTimesArray = [...tasksState.taskDetails[taskNumber].timesArry];
+        updatedTimesArray[index] = timeValue;
+
+        // Update taskDetails with the new timesArry
+        const updatedTaskDetails = [...tasksState.taskDetails];
+        updatedTaskDetails[taskNumber] = {
+            ...updatedTaskDetails[taskNumber],
+            timesArry: updatedTimesArray
+        };
+
+        setTasks({
+            ...tasksState,
+            taskDetails: updatedTaskDetails
+        });
+    };
 
     return (
-        <div className=''>
-            <form
-                onSubmit={formik.handleSubmit}
-                className='p-5 rounded-2xl shadow-2xl flex flex-col gap-5'>
-                <div>
-                    <div className=" h-12 relative flex rounded-xl">
+        <div className='p-6 bg-gradient-to-br from-white to-gray-100 shadow-xl rounded-3xl hover:shadow-2xl transition-shadow duration-300 ease-in-out'>
+            <form className='flex flex-col gap-4'>
+                <div className='flex gap-4'>
+                    <div className="w-72 flex">
                         <input
                             required
-                            className="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-bg_color_secendory focus:shadow-md"
-                            id="task"
+                            id="taskName"
                             type="text"
+                            placeholder="Enter Your Task"
+                            value={taskInput}
+                            onChange={handleChange}
+                            className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#3fb6af] focus:ring-2 focus:ring-[#58bcb3] transition duration-300 shadow-sm"
                         />
-                        <label
-                            className="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-bg_color_secendory peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                        >
-                            Enter Your Task
-                        </label>
+                    </div>
+                    <div className="w-48 h-12 flex">
+                        <input
+                            required
+                            id="times"
+                            type="number"
+                            placeholder='How Many Times?'
+                            onChange={handleChangeNumTimes}
+                            className='w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#3fb6af] focus:ring-2 focus:ring-[#58bcb3] transition duration-300 shadow-sm'
+                        />
                     </div>
                 </div>
 
-                <div className='flex gap-5'>
-                    <div className="w-60 h-12 relative flex rounded-xl">
-                        <input
-                            required
-                            className="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-bg_color_secendory focus:shadow-md"
-                            id="times"
-                            type="text"
-                        />
-                        <label
-                            className="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-bg_color_secendory peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                        >
-                            How Many Times?
-                        </label>
+                <div className='flex flex-col'>
+                    <div className='flex gap-4 w-80 flex-wrap'>
+                        {mappedArray.map((_:any, id:any) => (
+                            <div key={id} className='flex gap-2 items-center'>
+                                <div className='text-sm text-gray-700'>{id + 1}</div>
+                                <div className="w-32 h-12 flex rounded-xl">
+                                    <input
+                                        required
+                                        id={`time${id}`}
+                                        type="time"
+                                        onChange={(e) => handleTimeChange(id, e.target.value)}
+                                        className='w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#3fb6af] focus:ring-2 focus:ring-[#58bcb3] transition duration-300 shadow-sm'
+                                    />
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                    <div className="w-60 h-12 relative flex rounded-xl">
-                        <input
-                            required
-                            className="peer w-full bg-transparent outline-none px-4 text-base rounded-xl bg-white border border-bg_color_secendory focus:shadow-md"
-                            id="time"
-                            type="time"
-                        />
-                        <label
-                            className="absolute top-1/2 translate-y-[-50%] bg-white left-4 px-2 peer-focus:top-0 peer-focus:left-3 font-light text-base peer-focus:text-sm peer-focus:text-bg_color_secendory peer-valid:-top-0 peer-valid:left-3 peer-valid:text-sm peer-valid:text-[#4070f4] duration-150"
-                        >
-                            Set Time
-                        </label>
-                    </div>
+                    <DateRangePicker />
                     <button
-                        type='submit'
-                        className="relative py-2 px-8 text-black text-base font-medium nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-bg_color_secendory before:to-[#84c8a6] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"
+                        type='button'
+                        onClick={addNewTask}
+                        className="mx-auto h-fit my-auto py-2 px-8 text-white text-base font-medium rounded-full bg-[#58bcb3] transition-all duration-300 ease-in-out shadow-sm hover:bg-[#48a89e] active:bg-[#41a28e]"
                     >
-                        Add
+                        Add Next Task
+                    </button>
+                    <button
+                        type='button'
+                        onClick={handleTaskSubmission}
+                        className="mt-4 py-2 px-6 bg-[#58bcb3] text-white font-semibold rounded-full shadow-sm hover:bg-[#48a89e] transition duration-300"
+                    >
+                        Submit All Tasks
                     </button>
                 </div>
-
-
             </form>
         </div>
+    );
+};
 
-    )
-}
-export default InputField
+export default InputField;

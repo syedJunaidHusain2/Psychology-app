@@ -1,0 +1,25 @@
+.services-card {
+  width: 32%;
+}
+@media screen and (max-width: 1219px) {
+  .services-card {
+    width: 31%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .services-card {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 594px) {
+  .services-card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .services-card {
+    width: 100%;
+  }
+}

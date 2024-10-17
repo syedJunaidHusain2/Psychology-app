@@ -1,13 +1,20 @@
 "use client";
+import { useRouter } from 'next/navigation'
 import { useState } from 'react';
-import { sidebarItems, settingsItems } from '../data/sidebarData';
 import useTheme from "../context/ThemeContext";
+import { settingsItems, sidebarItems } from '../constant';
+import Link from 'next/link';
+import Modal from '../components/Modal';
 
 export default function Sidebar() {
+    const router = useRouter()
     const [activeItem, setActiveItem] = useState(null);
     const { themeMode, lightTheme, darkTheme } = useTheme();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const textColor = themeMode === "dark" ? 'text-white' : 'text-gray-700';
+    const borderColor = themeMode === "dark" ? "border-stone-100" : "border-stone-300"
 
-    const onChangeBtn = (e) => {
+    const onChangeBtn = (e:any) => {
         const darkModeStatus = e.currentTarget.checked;
         if (darkModeStatus) {
             darkTheme();
@@ -16,12 +23,18 @@ export default function Sidebar() {
         }
     };
 
-    const handleItemClick = (item) => {
+    const handleItemClick = (item:any) => {
         setActiveItem(item);
+        if (item === "Logout") {
+            setIsModalOpen(true)
+        }
     };
 
-    const textColor = themeMode === "dark" ? 'text-white' : 'text-gray-700';
-    const borderColor = themeMode === "dark" ? "border-stone-100" : "border-stone-300"
+    const handleLogout = () => {
+        router.push('/')
+        setIsModalOpen(false);
+    };
+
     return (
         <div className={`border-r-2 ${borderColor} font-light`}>
             <div className="py-3 border-b-2 border-stone-100 mt-2">
@@ -35,12 +48,12 @@ export default function Sidebar() {
                         className={`w-60 py-5 cursor-pointer ${activeItem === item.id ? 'text-black bg-gray-100 border-r-3 border-black' : ''}`}
                         onClick={() => handleItemClick(item.id)}
                     >
-                        <div className="flex items-center gap-4 ml-4">
+                        <Link href={`${item.link}`} className="flex items-center gap-4 ml-4">
                             <span className={`text-lg ${activeItem === item.id ? 'text-black' : ''}`}>
                                 {item.icon}
                             </span>
                             <p>{item.label}</p>
-                        </div>
+                        </Link>
                     </div>
                 ))}
             </div>
@@ -56,14 +69,14 @@ export default function Sidebar() {
                         className={`w-60 flex items-center gap-4 py-5 cursor-pointer ${activeItem === item.id ? 'text-black bg-gray-100 border-r-3 border-black' : ''}`}
                         onClick={() => handleItemClick(item.id)}
                     >
-                        <div className="flex items-center gap-4 ml-4">
+                        <Link href={`${item.link}`} className="flex items-center gap-4 ml-4">
                             {item.icon && (
                                 <span className={`text-xl ${activeItem === item.id ? 'text-black' : ''}`}>
                                     {item.icon}
                                 </span>
                             )}
                             <p>{item.label}</p>
-                        </div>
+                        </Link>
 
                         {item.id === 'changeTheme' && (
                             <label className="relative inline-flex items-center cursor-pointer">
@@ -80,6 +93,11 @@ export default function Sidebar() {
                     </div>
                 ))}
             </div>
+            <Modal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                onConfirm={handleLogout}
+            />
         </div>
     );
 }

@@ -1,43 +1,24 @@
-import StarRating from '@/components/starRating';
+import StarRating from '@/app/components/starRating';
 import React from 'react';
 
-const Card: React.FC = () => {
+const Card: React.FC<{ tasksState: any[] }> = ({ tasksState,date }:any) => {
     return (
-        <div className='w-fit p-4 bg-gray-100 rounded-lg'>
-            <table className='w-full border-separate border-spacing-1'>
+        <div className="max-w-lg w-full mx-auto p-6 bg-gradient-to-br from-white to-gray-100 shadow-xl rounded-3xl hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+            <div>
+                {date}
+            </div>
+            <table className="w-full border-separate border-spacing-2">
                 <tbody>
-                    <tr>
-                        <td className='py-2'>
-                            <div className='text-gray-700'>Activity</div>
-                        </td>
-                        <td className='py-2'>
-                            <StarRating />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className='py-2'>
-                            <div className='text-gray-700'>Exercise</div>
-                        </td>
-                        <td className='py-2'>
-                            <StarRating />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className='py-2'>
-                            <div className='text-gray-700'>Mindfulness</div>
-                        </td>
-                        <td className='py-2'>
-                            <StarRating />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className='py-2'>
-                            <div className='text-gray-700'>Book</div>
-                        </td>
-                        <td className='py-2'>
-                            <StarRating />
-                        </td>
-                    </tr>
+                    {!!tasksState.length && tasksState.map((item:any, id:any) => (
+                        <tr key={id} className="border-b border-gray-200 hover:bg-gray-50 transition-colors duration-300">
+                            <td className="py-3">
+                                <div className="text-gray-800 text-lg font-bold">{item.taskName}</div>
+                            </td>
+                            <td className="py-3 pl-6 whitespace-nowrap">
+                                <StarRating numOfTimes={item.timesArry} />
+                            </td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>

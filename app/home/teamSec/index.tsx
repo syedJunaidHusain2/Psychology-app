@@ -1,4 +1,4 @@
-import TeamComp from "@/components/teamComp";
+import TeamComp from "@/app/components/teamComp";
 import React from "react";
 
 const TeamSec = () => {

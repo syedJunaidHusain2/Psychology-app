@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from './card'
 
-const Table = () => {
+const Table = ({tasksState}:any) => {
     return (
         <div>
-            <Card />
+            <Card tasksState={tasksState}/>
         </div>
     )
 }
