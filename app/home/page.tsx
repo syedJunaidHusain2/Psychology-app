@@ -18,7 +18,7 @@ import UserContextProvider from "../context/UserContextProvider";
 const Home = () => {
   return (
     <div className="home">
-         <UserContextProvider>
+     <UserContextProvider>
       <SwiperApp />
       <WelcomeSec />
       <TherapistAndTreatment />
@@ -29,9 +29,7 @@ const Home = () => {
       <PricingSec />
       <QuestionSec />
       <BottomSec />
-     
-      </UserContextProvider>
-
+    </UserContextProvider>
     </div>
   );
 };

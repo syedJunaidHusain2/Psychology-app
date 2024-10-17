@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const withMT = require("@material-tailwind/react/utils/withMT");
+// const withMT = require("@material-tailwind/react/utils/withMT");
 const { nextui } = require("@nextui-org/react");
 
 const config: Config = {
@@ -61,7 +61,7 @@ const config: Config = {
       colors: {
         bg_black_light: "#00000025",
         bg_color_secendory: "#58bcb3",
-        bg_color_primary: "#5a9e7c",
+        bg_color_primary: "#007200",
         bg_color_tertiary: "#e1ffd4",
         p: "#7b8893",
         p2: "white",
@@ -110,4 +110,4 @@ const config: Config = {
   },
   plugins: [nextui()],
 };
-module.exports = withMT(config);
+module.exports = (config);

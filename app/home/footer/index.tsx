@@ -6,7 +6,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { IconButton } from '../../MTailwind'
+
 
 
 // const Footer = () => {
@@ -88,7 +88,7 @@ const Footer = () => {
 <div className="max-w-[1400px] mx-auto">
     <div className='bg-[#f0ece9] relative px-6 md:px-20 lg:w-full lg:px-28 lg:gap-14 py-10 lg:py-20 flex flex-col lg:flex-row justify-evenly items-start xl:flex-row md:gap-14'>
       <div className='mb-6 lg:mb-0'>
-        <Image 
+        <Image
           src="/images/logo.png" 
           alt="logo" 
           width={150} 
@@ -130,19 +130,18 @@ const Footer = () => {
         </div>
         <div className='text-sm md:text-base lg:text[14px] text-gray-900 mt-2 cursor-pointer '>contact@mindthera.com</div>
         <div className='flex justify-between items-center mt-6 md:mt-8'>
-        <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white  cursor-pointer'>
-            <FaXTwitter className='text-xl '/>
-          </IconButton>
-          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white  cursor-pointer'>
-            <FaInstagram className='text-xl '/>
-          </IconButton>
-          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white  cursor-pointer'>
-            <FaFacebookF className='text-xl '/>
-          </IconButton>
-          <IconButton className='bg-white text-bg_color_primary hover:bg-bg_color_primary hover:text-white  cursor-pointer'>
-            <FaFacebookF className='text-xl '/>
-          </IconButton>
-       
+        <div className='bg-white text-bg_color_primary flex justify-center items-center h-10 w-10 rounded-full cursor-pointer hover:bg-bg_color_primary hover:text-white transition-colors duration-300'>
+         <FaFacebookF/>
+        </div>
+        <div className='bg-white text-bg_color_primary flex justify-center items-center h-10 w-10 rounded-full cursor-pointer hover:bg-bg_color_primary hover:text-white transition-colors duration-300'>
+         <FaInstagram/>
+        </div>
+        <div className='bg-white text-bg_color_primary flex justify-center items-center h-10 w-10 rounded-full cursor-pointer hover:bg-bg_color_primary hover:text-white transition-colors duration-300'>
+         <FaXTwitter/>
+        </div>
+        <div className='bg-white text-bg_color_primary flex justify-center items-center h-10 w-10 rounded-full cursor-pointer hover:bg-bg_color_primary hover:text-white transition-colors duration-300'>
+         <FaYoutube/>
+        </div>
         </div>
       </div>
       

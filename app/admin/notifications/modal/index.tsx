@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaUser, FaPhone, FaEnvelope, FaCommentDots } from 'react-icons/fa';
 
-const Modal = ({ selectedNotification, closeModal }) => {
+const Modal = ({ selectedNotification, closeModal }:any) => {
     return (
         <div onClick={closeModal} className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 backdrop-blur-sm px-4 animate-fadeIn">
             <div className="bg-white w-full max-w-lg p-6 md:p-8 rounded-xl shadow-2xl transition-all transform scale-95 hover:scale-100">

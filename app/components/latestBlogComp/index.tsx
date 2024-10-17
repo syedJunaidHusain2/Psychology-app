@@ -1,7 +1,7 @@
 import React from 'react'
 import CurrentDate from '../currentDate'
 
-const LatestBlogComp = ({id}) => {
+const LatestBlogComp = ({id}:any) => {
   return (
     <div  className=' flex justify-evenly gap-4 items-start  p-1'>
       <div className='text-[35px] font-bold text-gray-300'>0{id}</div>

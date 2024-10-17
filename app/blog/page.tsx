@@ -67,7 +67,7 @@ const Blog = () => {
 
   console.log(state);
 
-  const getDivIndex = (index) => {
+  const getDivIndex = (index:any) => {
     return index % 3;
   };
 
@@ -104,9 +104,9 @@ const Blog = () => {
               {
                 navData.map((navItem)=>{
                   return(
-              <Link  href={navItem.url}>
+              <Link  href={navItem.href}>
               <div className="cursor-pointer relative inline-block after:absolute after:left-0 after:right-0 after:bottom-0 after:h-0.5 after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
-                {navItem.name}
+                {navItem.label}
               </div>
               </Link>
                   )

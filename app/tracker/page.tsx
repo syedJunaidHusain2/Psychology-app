@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import InputField from './input-field';
 import Table from './table';
-import { TrackerState } from '../types/types';
+import {TrackerState} from '../types/types';
 
 interface TaskDetail {
   taskName: string;
@@ -10,10 +10,6 @@ interface TaskDetail {
   timesArry: string[];
 }
 
-interface TrackerState {
-  taskDetails: TaskDetail[];
-  dateRangeArray: any[];
-}
 
 const defaultState: TrackerState = {
   taskDetails: [],

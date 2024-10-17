@@ -5,18 +5,18 @@ const DateRangePicker = () => {
     const [toDate, setToDate] = useState('');
     const [dateArray, setDateArray] = useState([]);
 
-    const handleFromDateChange = (e) => {
+    const handleFromDateChange = (e:any) => {
         setFromDate(e.target.value);
     };
 
-    const handleToDateChange = (e) => {
+    const handleToDateChange = (e:any) => {
         setToDate(e.target.value);
     };
 
     const generateDateArray = () => {
         const start = new Date(fromDate);
         const end = new Date(toDate);
-        const dates = [];
+        const dates:any = [];
 
         while (start <= end) {
             const day = start.getDate().toString().padStart(2, '0');

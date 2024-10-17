@@ -31,7 +31,7 @@ const Notifications = () => {
   const [selectedNotification, setSelectedNotification] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = (notification) => {
+  const openModal = (notification:any) => {
     setSelectedNotification(notification);
     setIsModalOpen(true);
   };
